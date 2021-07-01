@@ -1,0 +1,25 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+body {
+	font-size: 100%;
+	font-family: 'Bely Display';
+}
+.flex {
+    display: flex;
+}
+div.nav_bar {
+    min-height: 108px;
+    background-color: blueviolet;
+}
+div.nav_bar li a{
+    color: #2c3c3f;
+}
+section.hero {
+    min-height: 355px;
+    background-color: aqua;
+}
+figure.about_exhibit{
+    min-height: 445px;
+    background-color: grey;
+}
