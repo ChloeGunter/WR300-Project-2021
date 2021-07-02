@@ -1,11 +1,9 @@
 *, *::before, *::after {
 	box-sizing: border-box;
 }
-body {
-	font-size: 100%;
-	font-family: 'Bely';
-}
 main {
+    font-size: 100%;
+	font-family: 'Bely';
     padding: 0 10px 0 10px;
 }
 .flex {
@@ -30,16 +28,24 @@ div.nav_options {
     position: absolute;
     right: 5px;
     text-align: right;
+    flex-direction: column;
 }
-div.nav_bar li a{
+div.nav_options ul.global {
+    flex-direction: column;
+}
+div.nav_bar li a {
+    font-family: 'Novel Mono Pro Medium';
     color: #2c3c3f;
+}
+div.nav_bar li a:hover {
+    color: white;
 }
 div.nav_bar h2 {
     width: 141px;
     height: 29px;
 }
 section.hero {
-    text-align: center;;
+    text-align: center;
     min-height: 352px;
     background-color: aqua;
 }
@@ -67,7 +73,6 @@ section.hero h2{
     margin: 0 auto;
 }
 figure.about_exhibit {
-    width: 260px;
     min-height: 430px;
     padding: 31px 15px 37px;
 }
@@ -76,7 +81,8 @@ figure.about_exhibit h1 {
     line-height: 29px;
     padding-bottom: 8px;
 }
-figure.about_exhibit p {
+figure.about_exhibit figcaption {
+    width: 260px;
     font-size: 14px;
     line-height: 14px;
 }
@@ -113,11 +119,12 @@ section.exhibit_details h2 {
 section.purchase_tickets {
     text-align: center;
     height: 417px;
-    padding: 45px 0 0;
+    padding: 45px 0 450px;
 }
 section.purchase_tickets h1{
     text-align: center;
     font-size: 42px;
+    padding-bottom: 110px;
 }
 section.purchase_tickets figure.pricing {
     font-family: 'Novel Mono Pro';
@@ -175,6 +182,7 @@ section.faq h1 {
   }
   figure.email_questions h1 {
       font-size: 22px;
+      line-height: 30px;
       padding: 0;
   }
   figure.email_questions p {
@@ -200,10 +208,269 @@ h2.about_artist_button {
 }
 footer{
     background-color:rgb(114, 202, 208);
+    padding: 5px 10px;
 }
-footer div.copyright {
+footer div.flex {
+    flex-direction: column;
+}
+footer figure{
+    padding: 0 10px;
+}
+footer img {
+    height: 110px;
+    padding: 30px 14px 0 0;
+}
+footer h1{
+    font-size: 13px;
+    line-height: 25px;
+}
+footer figcaption a {
+    font-size: 9px;
+    font-weight: bold;
+    line-height: 15px;
+    text-decoration: none;
+    color: white;
+}
+footer a {
+    font-size: 17px;
+    color: white;
+}
+footer p{
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+    padding-bottom: 10px;
+}
+footer a:hover {
+    color:royalblue;
+}
+
+div.copyright {
+    text-align: center;
+    font-size: 7px;
+    font-weight: bold;
+    line-height: 16px;
     background-color: grey;
     color: white;
 }
 
-  
+
+
+@media screen and (min-width: 750px){
+    div.nav_bar {
+        padding-top: 15px;
+        min-height: 142px;
+    }
+    div.nav_bar img {
+        height: 120px;
+    }
+    div.nav_options {
+        flex-direction: row-reverse;
+    }
+    div.nav_options ul.global {
+        flex-direction: row;
+    }
+    div.nav_options ul.global li {
+        padding-right: 43px;
+    }
+    div.nav_options ul.global li a{
+        text-decoration: none;
+    }
+    section.hero {
+        min-height: 435px;
+    }
+    section.hero h1{
+        font-size: 56px;
+        padding-bottom: 35px;
+        padding-top: 80px;
+    }
+    section.hero p{
+        font-size: 18px;
+        line-height: 17px;
+    }
+    section.hero :nth-child(2){
+        width: 90%;
+        line-height: 22px;
+    }
+    section.hero :nth-child(3){
+        font-size: 29px;
+        padding: 30px 0 20px 0;
+    }
+    section.hero h2{
+        width: 140px;
+        height: 30px;
+    }
+    figure.about_exhibit {
+        width: 360px;
+        min-height: 695px;
+        padding: 90px 45px 0;
+    }
+    figure.about_exhibit h1 {
+        font-size: 42px;
+        line-height: 41px;
+        padding-bottom: 10px;
+    }
+    figure.about_exhibit figcaption {
+        width: 360px;
+        font-size: 20px;
+        line-height: 20px;
+    }
+    section.exhibit_details img {
+        height: 227px;
+        width: 190px;
+        background-color: grey;
+        margin: 0 11px 10px 0;
+    }
+    section.exhibit_details img.image3 {
+        height: 170px;
+        width: 255px;
+        background-color: grey;
+    }
+    section.exhibit_details img {
+        height: 343px;
+        width: 286px;
+        margin: 0 28px 24px 0;
+    }
+    section.exhibit_details img.image3 {
+        height: 256px;
+        width: 383px;
+    }
+    section.exhibit_details :last-child h1{
+        font-size: 40px;
+        padding-bottom: 23px;
+    }
+    section.exhibit_details :last-child h3 {
+        font-size: 19px;
+        line-height: 30px;
+    }
+    section.exhibit_details :last-child p {
+        font-size: 19px;
+        line-height: 21px;
+        padding-bottom: 20px;
+    }
+    section.exhibit_details h2 {
+        width: 115px;
+        height: 30px;
+        margin-bottom: 24px;
+    }
+    section.purchase_tickets {
+        height: 655px;
+        padding: 45px 0 0 0;
+    }
+    section.purchase_tickets h1{
+        font-size: 60px;
+        padding-bottom: 155px;
+    }
+    section.purchase_tickets figure.pricing {
+        padding: 13px 0;
+    }
+    section.purchase_tickets h3{
+        font-size: 30px;
+    }
+    section.purchase_tickets p{
+        font-size: 16px;
+        width: 410px;
+        padding: 3px 0 17px 7%;
+    }
+    section.purchase_tickets h2 {
+        width: 138px;
+        height: 28px;
+    }
+    section.faq h1 {
+        font-size: 67px;
+        line-height: 77px;
+        padding: 22px 0 29px;
+}
+figure.email_questions h1 {
+        font-size: 35px;
+        padding: 0;
+}
+figure.email_questions p {
+      font-size: 27px;
+}
+section.about_artist {
+      background-color: blue;
+      min-height: 224px;
+}
+h2.about_artist_button {
+      width: 250px;
+      height: 30px;
+  }
+footer{
+    padding: 18px 15px;
+}
+footer img {
+    height: 110px;
+    padding: 12px 30px 0 0;
+}
+footer div.flex {
+    flex-direction: row;
+}
+footer h1{
+    font-size: 17px;
+    line-height: 15px;
+}
+footer figcaption a {
+    font-size: 12px;
+}
+footer a {
+    font-size: 24px;
+}
+footer p{
+    font-size: 12px;
+    padding-bottom: 18px;
+}
+div.copyright {
+    font-size: 11px;
+    line-height: 30px;
+}
+
+
+}
+
+
+
+@media screen and (min-width: 1400px){
+body {
+    margin-left: 355px;
+}
+div.nav_bar {
+    height: 100vh;
+    width: 355px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: grey;
+    overflow-x: hidden;
+    padding-top: 27px;
+    flex-direction: column;
+    align-items: center;
+}
+div.nav_bar img {
+    height: 150px;
+}
+div.nav_options {
+    position:relative;
+    text-align: left;
+    flex-direction: column;
+    padding: 30px 0;
+}
+div.nav_options ul.global {
+    flex-direction: column;
+}
+div.nav_options ul.global li a{
+    font-size: 30px;
+    line-height: 60px;
+}
+div.nav_bar h2 {
+    width: 212px;
+    height: 42px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+}
