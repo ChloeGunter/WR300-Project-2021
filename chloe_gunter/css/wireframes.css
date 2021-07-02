@@ -468,7 +468,148 @@ div.nav_bar h2 {
     height: 42px;
     margin-bottom: 20px;
 }
-
+section.hero {
+    text-align: left;
+    min-height: 577px;
+    padding-left: 20px;
+}
+section.hero h1{
+    font-size: 75px;
+    line-height: 78px;
+    width: 40%;
+    padding-top: 40px;
+}
+section.hero p{
+    font-size: 24px;
+    line-height: 24px;
+}
+section.hero :nth-child(2){
+    width: 465px;
+    margin: 0;
+}
+section.hero :nth-child(3){
+    font-size: 31px;
+    padding-bottom: 30px;
+}
+section.hero h2{
+    width: 188px;
+    height: 40px;
+    margin: 0;
+}
+figure.about_exhibit {
+    min-height: 695px;
+    padding-bottom: 85px;
+}
+figure.about_exhibit h1 {
+    width: 400px;
+    font-size: 51px;
+    line-height: 50px;
+    padding-bottom: 10px;
+}
+figure.about_exhibit figcaption {
+    width: 360px;
+    font-size: 24px;
+    line-height: 24px;
+}
+section.exhibit_details img {
+    width: 378px;
+    height: 456px;
+    margin: 0 42px 32px 0;
+}
+section.exhibit_details img.image3 {
+    height: 353px;
+    width: 533px;
+}
+section.exhibit_details :last-child h1{
+    font-size: 53px;
+    padding-bottom: 30px;
+}
+section.exhibit_details :last-child h3 {
+    font-size: 25px;
+    line-height: 30px;
+}
+section.exhibit_details :last-child p {
+    /* width: 500px; */
+    font-size: 25px;
+    line-height: 26px;
+    padding-bottom: 26px;
+}
+section.exhibit_details h2 {
+    width: 150px;
+    height: 40px;
+    margin-bottom: 25px;
+}
+section.purchase_tickets {
+    text-align: center;
+    height: 800px;
+    padding: 45px 0 450px;
+}
+section.purchase_tickets h1{
+    font-size: 74px;
+    padding-bottom: 190px;
+}
+section.purchase_tickets figure.pricing {
+    padding: 14px 0;
+}
+section.purchase_tickets h3{
+    font-size: 40px;
+}
+section.purchase_tickets p{
+    font-size: 20px;
+    text-align: left;
+    width: 600px;
+    padding: 10px 0 30px 2%;
+}
+section.purchase_tickets h2 {
+    width: 180px;
+    height: 40px;
+}
+section.faq h1 {
+    text-align: left;
+    font-size: 74px;
+    line-height: 77px;
+    width: 730px;
+}
+figure.email_questions h1 {
+    font-size: 35px;
+    padding: 0;
+}
+figure.email_questions p {
+  text-align: left;
+}
+section.about_artist {
+  background-color: blue;
+  min-height: 224px;
+}
+h2.about_artist_button {
+  width: 250px;
+  height: 30px;
+}
+footer{
+    padding: 35px 15px;
+}
+footer img {
+    display: none;
+}
+footer h1{
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+footer figcaption a {
+    font-size: 20px;
+    line-height: 20px;
+}
+footer a {
+    font-size: 37px;
+}
+footer p{
+    font-size: 21px;
+    padding-bottom: 22px;
+}
+div.copyright {
+    font-size: 13px;
+    line-height: 35px;
+}
 
 
 
