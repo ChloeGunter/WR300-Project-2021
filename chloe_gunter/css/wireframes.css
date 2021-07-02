@@ -3,23 +3,207 @@
 }
 body {
 	font-size: 100%;
-	font-family: 'Bely Display';
+	font-family: 'Bely';
+}
+main {
+    padding: 0 10px 0 10px;
 }
 .flex {
     display: flex;
 }
+h1{
+    font-family: 'Bely Display';
+}
+h2{
+    background-image: url(../images/button.jpg);
+    background-size: cover;
+}
 div.nav_bar {
+    padding-top: 15px;
     min-height: 108px;
     background-color: blueviolet;
+}
+div.nav_bar img {
+    height: 100px;
+}
+div.nav_options {
+    position: absolute;
+    right: 5px;
+    text-align: right;
 }
 div.nav_bar li a{
     color: #2c3c3f;
 }
+div.nav_bar h2 {
+    width: 141px;
+    height: 29px;
+}
 section.hero {
-    min-height: 355px;
+    text-align: center;;
+    min-height: 352px;
     background-color: aqua;
 }
-figure.about_exhibit{
-    min-height: 445px;
+section.hero h1{
+    font-size: 39px;
+    padding-bottom: 15px;
+    padding-top: 24px;
+}
+section.hero p{
+    font-size: 13px;
+    line-height: 14px;
+}
+section.hero :nth-child(2){
+    width: 324px;
+    margin: 0 auto;
+}
+section.hero :nth-child(3){
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px 0 10px 0;
+}
+section.hero h2{
+    width: 113px;
+    height: 23px;
+    margin: 0 auto;
+}
+figure.about_exhibit {
+    width: 260px;
+    min-height: 430px;
+    padding: 31px 15px 37px;
+}
+figure.about_exhibit h1 {
+    font-size: 30px;
+    line-height: 29px;
+    padding-bottom: 8px;
+}
+figure.about_exhibit p {
+    font-size: 14px;
+    line-height: 14px;
+}
+section.exhibit_details img {
+    height: 227px;
+    width: 190px;
+    background-color: grey;
+    margin: 0 11px 10px 0;
+}
+section.exhibit_details img.image3 {
+    height: 170px;
+    width: 255px;
     background-color: grey;
 }
+section.exhibit_details :last-child h1{
+    font-size: 26px;
+    padding-bottom: 15px;
+}
+section.exhibit_details :last-child h3 {
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 20px;
+}
+section.exhibit_details :last-child p {
+    font-size: 13px;
+    line-height: 14px;
+    padding-bottom: 13px;
+}
+section.exhibit_details h2 {
+    width: 85px;
+    height: 23px;
+    margin-bottom: 5px;
+}
+section.purchase_tickets {
+    text-align: center;
+    height: 417px;
+    padding: 45px 0 0;
+}
+section.purchase_tickets h1{
+    text-align: center;
+    font-size: 42px;
+}
+section.purchase_tickets figure.pricing {
+    font-family: 'Novel Mono Pro';
+    width: 75%;
+    padding: 9px 0;
+    margin: 0 auto;
+    background-color: blue;
+}
+section.purchase_tickets h3{
+    font-size: 18px;
+}
+section.purchase_tickets p{
+    font-size: 10px;
+    text-align: left;
+    width: 270px;
+    padding: 3px 0 17px 4%;
+}
+section.purchase_tickets h2 {
+    width: 83px;
+    height: 17px;
+}
+section.faq h1 {
+    font-size: 42px;
+    line-height: 48px;
+    text-align: center;
+    padding: 22px 0 18px;
+}
+.accordin_item {
+    font-family: 'Bely';
+    background-color: rgb(114, 202, 208);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: white solid 1px;
+    transition: 1s;
+  }
+  
+  .active, .accordin_item:hover {
+    font-family: 'Bely Italic';
+    font-weight: bold;
+    background-color: black;
+  }
+  
+  .accordin_body {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
+  figure.email_questions {
+      text-align: center;
+      padding-bottom: 25px;
+  }
+  figure.email_questions h1 {
+      font-size: 22px;
+      padding: 0;
+  }
+  figure.email_questions p {
+    font-size: 17px;
+}
+figure.email_questions a {
+    font-weight: bold;
+    text-decoration: none;
+}
+figure.email_questions a:hover {
+    color: burlywood;
+    text-decoration: underline;
+}
+section.about_artist {
+    background-color: blue;
+    min-height: 135px;
+    padding: 75px;
+}
+h2.about_artist_button {
+    width: 196px;
+    height: 23px;
+    margin: 0 auto;
+}
+footer{
+    background-color:rgb(114, 202, 208);
+}
+footer div.copyright {
+    background-color: grey;
+    color: white;
+}
+
+  
