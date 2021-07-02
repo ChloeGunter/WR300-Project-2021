@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/f12efb326b.js" crossorigin="anonymous"></script>
+  <title>Gallery Page</title>
+  <link rel="stylesheet" href="https://use.typekit.net/lyj1kmp.css">
+  <link href="css/reset.css" rel="stylesheet" type="text/css" />
+  <link href="css/wireframes.css" rel="stylesheet" type="text/css" />
+  
+</head>
+<header class="dgallery">
+  <div class="nav_bar flex">
+    <a href="index.html"><img src="images/logo_grey.png" alt="logo"></a>
+    <div class="nav_options flex">
+    <h2 class="ticket_button"><a href="#exhibit_details"></a></h2>
+    <nav id="main-nav" role="navigation">
+      <ul class="global flex">
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="locations.html">LOCATIONS</a></li>
+      </ul>
+    </nav>
+  </div>
+  </div>
+  <section class="hero">
+    <h1>ExhibitGallery</h1>
+    <p>It’s been on postcards, tote bags, coffee cups and T-shirts, and now the latest form of The Starry Night’s pop culture domination.
+      “Immersive Van Gogh,” an exhibition that, true to its name, transforms the iconic paintings of  Vincent van Gogh into moving, wall-filling projections. The installation promises half-a-million cubic feet of projections that pull from some of the post-Impressionist’s most recognizable pieces, including The Bedroom, Sunflowers and, yes, The Starry Night.</p>
+    <h2 class="ticket_button"><a href="#purchase_tickets"></a></h2>
+  </section>
+</header>
+<body>
+<main class="dgallery">
+    <section class="collapsing_gallery">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>  
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </section>
+
+    <section class="collapsing_gallery2">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+    </section>
+    
+
+</main>
+</body>
+<footer class="flex">
+  <a href="index.html"><img src="images/logo_grey.png" alt="logo"></a>
+  <div class="flex">
+    <figure>
+      <h1>Contact Us</h1>
+      <figcaption class="email_link"><a href="mailto:Hello@VanGoghSanDiego.com" target="_blank" title="mail">Hello@VanGoghSanDiego.com</a></figcaption>
+      <a href="https://www.facebook.com/" target="_blank" title="facebook"><i class="fab fa-facebook-square"></i></a>
+      <a href="https://www.instagram.com/" target="_blank" title="instagram"><i class="fab fa-instagram"></i></a>
+    </figure>
+    <figure>
+      <h1>Let Us Update You!</h1>
+      <p>Daily tickets will be limited, so interested guests are encouraged to SIGN UP to receive updates detailing dates, venue, and ticket on-sale!</p>
+      <form class="emailform flex" name="emailform" id="emailform" method="get" action="emailformprocessor.php">
+        <label for="email"></label>
+        <input type="text" name="email" id="email" class="fsize" placeholder="YOUR EMAIL" />
+
+
+        <h2><input type="submit" name="submit" value="SIGN ME UP" class="sign_me_up_button" /></h2>
+        </form>
+    </figure>
+  </div>
+</footer>
+<div class="copyright">
+  <small>© 2021 Beyond Van Gogh: The Immersive Experience. All Rights Reserved. | Privacy Policy</small>
+  </div>
+</html>

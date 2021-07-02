@@ -72,6 +72,38 @@ section.hero h2{
     height: 23px;
     margin: 0 auto;
 }
+
+
+/* About Page */
+.dabout section.hero,
+.dgallery section.hero,
+.dlocations section.hero {
+    text-align: left;
+    min-height: 352px;
+    padding-left: 10px;
+}
+.dabout section.hero h1,
+.dgallery section.hero h1,
+.dlocations section.hero h1 {
+    padding-top: 170px;
+}
+.dabout section.hero p,
+.dgallery section.hero p,
+.dlocations section.hero p{
+padding-bottom: 20px;
+}
+.dabout section.hero :nth-child(2),
+.dgallery section.hero :nth-child(2),
+.dlocations section.hero :nth-child(2){
+    margin: 0;
+}
+.dabout section.hero h2,
+.dgallery section.hero h2,
+.dlocations section.hero h2 {
+    margin: 0;
+}
+
+
 figure.about_exhibit {
     min-height: 430px;
     padding: 31px 15px 37px;
@@ -206,6 +238,175 @@ h2.about_artist_button {
     height: 23px;
     margin: 0 auto;
 }
+
+/* About Page */
+body.dabout main figure.right_align{
+    text-align: right;
+    width: 225px;
+}
+body.dabout main figure.right_align h1{
+    font-size: 27px;
+    line-height: 27px;
+    padding-top: 40px;
+}
+body.dabout main figure.right_align figcaption{
+    font-size: 13px;
+    line-height: 15px;
+    padding-top: 15px;
+}
+body.dabout main figure.left_align{
+    text-align: left;
+}
+body.dabout main figure.left_align h1{
+    font-size: 27px;
+    line-height: 30px;
+    padding-top: 40px;
+}
+body.dabout main figure.left_align figcaption{
+    width: 200px;
+    font-size: 13px;
+    line-height: 15px;
+    padding-top: 15px;
+}
+body.dabout section h1{
+    font-size: 32px;
+    padding: 80px 0 18px;
+}
+body.dabout section h3 {
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 26px;
+}
+body.dabout section p {
+    font-size: 13px;
+    line-height: 17px;
+    padding-bottom: 17px;
+}
+.dabout .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    background-color: rgb(119, 119, 255);
+    padding: 7px;
+}
+  
+.dabout .grid-container > div {
+    border: white solid 1px;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+  
+.dabout .item1 {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 2;
+}
+.dabout .item2 {
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 2;
+  }
+.dabout .item3 {
+    grid-column: 3 / span 2;
+    grid-row: 3 / span 2;
+}
+
+
+
+
+/* Gallery Page */
+.dgallery .collapsing_gallery,
+.dgallery .collapsing_gallery2 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    background-color: rgb(119, 119, 255);
+    padding: 7px;
+  }
+  
+  .dgallery .collapsing_gallery > div,
+  .dgallery .collapsing_gallery2 > div {
+    border: white solid 3px;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  .item1 {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 2;
+  }
+  .item2 {
+    grid-column: 1 / span 2;
+      grid-row: 3 / span 1;
+  }
+  .item3 {
+    grid-column: 3 / span 2;
+      grid-row: 3 / span 1;
+  }
+  .item4 {
+    grid-column: 1 / span 2;
+      grid-row: 4 / span 1;
+  }
+  .item5 {
+    grid-column: 3 / span 2;
+      grid-row: 4 / span 1;
+  }
+
+  .second_gallery_section .item1 {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 4;
+  }
+  .second_gallery_section .item2 {
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 2;
+  }
+  .second_gallery_section .item3 {
+    grid-column: 3 / span 2;
+    grid-row: 3 / span 2;
+  }
+
+
+
+
+  /* Locations Page */
+  main.dlocations section.left-align h1,
+  main.dlocations section.left-align h2,
+  main.dlocations section.right-align h1,
+  main.dlocations section.right-align h2  {
+      font-size: 32px;
+      padding-bottom: 15px;
+  }
+  main.dlocations section.left-align h3,
+  main.dlocations section.left-align h3,
+  main.dlocations section.right-align h3,
+  main.dlocations section.right-align h3 {
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: bold;
+  }
+  main.dlocations section.left-align h4 a,
+  main.dlocations section.left-align h4 a,
+  main.dlocations section.right-align h4 a,
+  main.dlocations section.right-align h4 a {
+      font-size: 15px;
+      line-height: 16px;
+      font-family: 'Bely Bold Italic';
+  }
+  main.dlocations section.left-align p,
+  main.dlocations section.left-align p,
+  main.dlocations section.right-align p,
+  main.dlocations section.right-align p {
+      font-size: 15px;
+      line-height: 12px;
+      font-family: 'Bely';
+  }
+  main.dlocations section.right-align {
+      text-align: right;
+  }
+
+
+
+
+
 footer{
     background-color:rgb(114, 202, 208);
     padding: 5px 10px;
@@ -253,6 +454,9 @@ div.copyright {
     background-color: grey;
     color: white;
 }
+
+
+
 
 
 
@@ -610,6 +814,17 @@ div.copyright {
     font-size: 13px;
     line-height: 35px;
 }
+
+
+/* Gallery Page */
+
+.dgallery .item1 {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+  }
+.dgallery .item4 {
+    grid-column: 3 / span 1;
+  }
 
 
 
