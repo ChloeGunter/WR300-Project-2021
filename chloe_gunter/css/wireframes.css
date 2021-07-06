@@ -148,6 +148,12 @@ section.exhibit_details h2 {
     height: 23px;
     margin-bottom: 5px;
 }
+
+
+
+
+
+
 section.purchase_tickets {
     text-align: center;
     height: 417px;
@@ -240,6 +246,7 @@ h2.about_artist_button {
 }
 
 /* About Page */
+
 body.dabout main figure.right_align{
     text-align: right;
     width: 225px;
@@ -268,16 +275,16 @@ body.dabout main figure.left_align figcaption{
     line-height: 15px;
     padding-top: 15px;
 }
-body.dabout section h1{
+body.dabout section.exhibit_details h1{
     font-size: 32px;
     padding: 80px 0 18px;
 }
-body.dabout section h3 {
+body.dabout section.exhibit_details h3 {
     font-size: 17px;
     font-weight: bold;
     line-height: 26px;
 }
-body.dabout section p {
+body.dabout section.exhibit_details p {
     font-size: 13px;
     line-height: 17px;
     padding-bottom: 17px;
@@ -288,6 +295,8 @@ body.dabout section p {
     grid-gap: 10px;
     background-color: rgb(119, 119, 255);
     padding: 7px;
+    margin: 10px;
+    min-height: 480px;
 }
   
 .dabout .grid-container > div {
@@ -321,6 +330,13 @@ body.dabout section p {
     grid-gap: 10px;
     background-color: rgb(119, 119, 255);
     padding: 7px;
+    margin: 10px;
+  }
+  .dgallery .collapsing_gallery {
+    min-height: 715px;
+  }
+  .dgallery .collapsing_gallery2 {
+    min-height: 385px;
   }
   
   .dgallery .collapsing_gallery > div,
@@ -351,18 +367,19 @@ body.dabout section p {
       grid-row: 4 / span 1;
   }
 
-  .second_gallery_section .item1 {
+  .collapsing_gallery2 .item1 {
     grid-column: 1 / span 2;
     grid-row: 1 / span 4;
   }
-  .second_gallery_section .item2 {
+  .collapsing_gallery2 .item2 {
     grid-column: 3 / span 2;
     grid-row: 1 / span 2;
   }
-  .second_gallery_section .item3 {
+  .collapsing_gallery2 .item3 {
     grid-column: 3 / span 2;
     grid-row: 3 / span 2;
   }
+
 
 
 
@@ -630,7 +647,123 @@ div.copyright {
 }
 
 
+/* About Page */
+
+body.dabout main figure.right_align{
+    width: 355px;
 }
+body.dabout main figure.right_align h1{
+    font-size: 40px;
+    line-height: 40px;
+    padding-top: 40px;
+}
+body.dabout main figure.right_align figcaption{
+    font-size: 20px;
+    line-height: 21px;
+    padding-top: 15px;
+}
+body.dabout main figure.left_align{
+    text-align: left;
+}
+body.dabout main figure.left_align h1{
+    font-size: 40px;
+    line-height: 40px;
+    padding-top: 40px;
+}
+body.dabout main figure.left_align figcaption{
+    width: 300px;
+    font-size: 20px;
+    line-height: 21px;
+    padding-top: 15px;
+}
+body.dabout section.exhibit_details h1{
+    font-size: 55px;
+}
+body.dabout section.exhibit_details h3 {
+    font-size: 27.5px;
+    line-height: 44px;
+}
+body.dabout section.exhibit_details p {
+    font-size: 27px;
+    line-height: 28px;
+    padding-bottom: 22px;
+}
+.dabout .grid-container {
+    margin: 20px;
+    min-height: 830px;
+}
+
+
+
+
+
+
+/* Gallery Page */
+.dgallery .collapsing_gallery,
+.dgallery .collapsing_gallery2 {
+    margin: 20px;
+}
+.dgallery .collapsing_gallery {
+    min-height: 1135px;
+  }
+  .dgallery .collapsing_gallery2 {
+    min-height: 605px;
+  }
+
+
+
+
+  /* Locations Page */
+  main.dlocations {
+      margin: 20px;
+  }
+  main.dlocations section.left-align h1,
+  main.dlocations section.left-align h2,
+  main.dlocations section.right-align h1,
+  main.dlocations section.right-align h2  {
+      font-size: 50px;
+      padding-bottom: 23px;
+  }
+  main.dlocations section.left-align h3,
+  main.dlocations section.left-align h3,
+  main.dlocations section.right-align h3,
+  main.dlocations section.right-align h3 {
+      font-size: 25px;
+      line-height: 36px;
+  }
+  main.dlocations section.left-align h4 a,
+  main.dlocations section.left-align h4 a,
+  main.dlocations section.right-align h4 a,
+  main.dlocations section.right-align h4 a {
+      font-size: 21px;
+      line-height: 22px;
+      font-family: 'Bely Bold Italic';
+  }
+  main.dlocations section.left-align p,
+  main.dlocations section.left-align p,
+  main.dlocations section.right-align p,
+  main.dlocations section.right-align p {
+      font-size: 21px;
+      line-height: 18px;
+      font-family: 'Bely';
+  }
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
 
 
 
@@ -687,11 +820,11 @@ section.hero p{
     font-size: 24px;
     line-height: 24px;
 }
-section.hero :nth-child(2){
+.dhome section.hero :nth-child(2){
     width: 465px;
     margin: 0;
 }
-section.hero :nth-child(3){
+.dhome section.hero :nth-child(3){
     font-size: 31px;
     padding-bottom: 30px;
 }
@@ -816,15 +949,115 @@ div.copyright {
 }
 
 
+/* About Page */
+
+body.dabout main figure.right_align{
+    width: 511px;
+}
+body.dabout main figure.right_align h1{
+    font-size: 53px;
+    line-height: 48px;
+}
+body.dabout main figure.right_align figcaption{
+    font-size: 23px;
+    line-height: 26px;
+    padding-top: 25px;
+}
+body.dabout main figure.left_align h1{
+    font-size: 53px;
+    line-height: 55px;
+    padding-top: 50px;
+}
+body.dabout main figure.left_align figcaption{
+    width: 490px;
+    font-size: 23px;
+    line-height: 26px;
+    padding-top: 25px;
+}
+body.dabout section.exhibit_details h1{
+    font-size: 74px;
+}
+body.dabout section.exhibit_details h3 {
+    font-size: 37px;
+    line-height: 60px;
+}
+body.dabout section.exhibit_details p {
+    font-size: 37px;
+    line-height: 39px;
+    padding-bottom: 30px;
+}
+.dabout .grid-container {
+    margin: 30px;
+    min-height: 1116px;
+}
+
+
 /* Gallery Page */
 
-.dgallery .item1 {
+.dgallery .collapsing_gallery {
+    min-height: 500px;
+  }
+  .dgallery .collapsing_gallery2 {
+    min-height: 830px;
+  }
+
+
+.item1 {
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
   }
-.dgallery .item4 {
+.item2,
+.item4 {
     grid-column: 3 / span 1;
   }
+.item3,
+.item5 {
+    grid-column: 4 / span 1;
+  }
+.item2,
+.item3 {
+    grid-row: 1 / span 1;
+}   
+.item4,
+.item5 {
+    grid-row: 2 / span 1;
+}    
+
+
+/* Locations Page */
+main.dlocations {
+    margin: 30px;
+}
+main.dlocations section.left-align h1,
+main.dlocations section.left-align h2,
+main.dlocations section.right-align h1,
+main.dlocations section.right-align h2  {
+    font-size: 67px;
+    padding-bottom: 30px;
+}
+main.dlocations section.left-align h3,
+main.dlocations section.left-align h3,
+main.dlocations section.right-align h3,
+main.dlocations section.right-align h3 {
+    font-size: 34px;
+    line-height: 39px;
+}
+main.dlocations section.left-align h4 a,
+main.dlocations section.left-align h4 a,
+main.dlocations section.right-align h4 a,
+main.dlocations section.right-align h4 a {
+    font-size: 28px;
+    line-height: 30px;
+    font-family: 'Bely Bold Italic';
+}
+main.dlocations section.left-align p,
+main.dlocations section.left-align p,
+main.dlocations section.right-align p,
+main.dlocations section.right-align p {
+    font-size: 28px;
+    line-height: 24px;
+    font-family: 'Bely';
+}
 
 
 
