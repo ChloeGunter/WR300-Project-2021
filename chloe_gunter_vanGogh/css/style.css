@@ -2,9 +2,9 @@
 	box-sizing: border-box;
 }
 
-.flex{
+/* .flex{
     display: flex;
-}
+} */
 
 body{
     font-size: 100%;
@@ -111,21 +111,32 @@ h2{
     background-color: #f55612;
 }
 
+img{
+    width: 100%
+}
+
 div.nav_bar{
+    text-align: right;
     min-height: 110px;
     padding: 10px;
     background-color: #fff;
 }
 div.nav_bar img {
-    height: 100px;
+    width: 40%;
+    display: block;
+    float: left;
 }
 div.nav_bar h2{
+    /* position: absolute;
+    right: 0; */
     width: 140px;
     height: 30px;
     text-align: center;
+    float: right;
 }
 div.nav_options{
     position: relative;
+    /* right: 5px; */
     flex-direction: column;
 }
 div.nav_bar h2 a{
