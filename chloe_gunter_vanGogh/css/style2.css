@@ -1,0 +1,276 @@
+*, *::before, *::after{
+	box-sizing: border-box;
+}
+
+
+.cf:before,
+.cf:after {
+content: " ";
+display: table;
+}
+
+.cf:after {
+clear: both;
+}
+
+/* .flex{
+    display: flex;
+} */
+
+body{
+    font-size: 100%;
+    font-family: 'bely', serif;
+    color: #2c3c3f;
+}
+
+/* Hamburger Menu */
+.hamburger{
+    padding-top: 30px;
+    width: 50px;
+    cursor: pointer;
+    transition-property: opacity, filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    overflow: visible;
+}
+.hamburger:hover{
+    opacity: 0.7;
+}
+.hamburger.is-active:hover {
+    opacity: 0.7;
+}
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+    background-color: #2c3c3f;
+}
+.hamburger-box{
+    width: 40px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+}
+.hamburger-inner{
+    display: block;
+    top: 50%;
+    margin-top: -2px; 
+}
+.hamburger-inner, 
+.hamburger-inner::before, 
+.hamburger-inner::after{
+    width: 40px;
+    height: 4px;
+    background-color: #2c3c3f;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+}
+.hamburger-inner::before, 
+.hamburger-inner::after{
+    content: "";
+    display: block;
+}
+.hamburger-inner::before{
+    top: -10px;
+} 
+.hamburger-inner::after{
+    bottom: -10px;
+}
+  
+  
+  /* Squeeze */
+.hamburger--squeeze .hamburger-inner {
+    transition-duration: 0.075s;
+    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.hamburger--squeeze .hamburger-inner::before {
+    transition: top 0.075s 0.12s ease, opacity 0.075s ease;
+}
+.hamburger--squeeze .hamburger-inner::after {
+    transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}   
+.hamburger--squeeze.is-active .hamburger-inner {
+    transform: rotate(45deg);
+    transition-delay: 0.12s;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.hamburger--squeeze.is-active .hamburger-inner::before {
+    top: 0;
+    opacity: 0;
+    transition: top 0.075s ease, opacity 0.075s 0.12s ease;
+}
+.hamburger--squeeze.is-active .hamburger-inner::after {
+    bottom: 0;
+    transform: rotate(-90deg);
+    transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+   
+
+  
+h1{
+    font-family: 'bely-display', 'sans-serif';
+}
+h2{
+    background-color: #f55612;
+}
+
+img{
+    width: 100%
+}
+
+div.nav_bar{
+    text-align: right;
+    min-height: 110px;
+    padding: 10px;
+    background-color: #fff;
+}
+div.nav_bar img {
+    width: 40%;
+    display: block;
+    float: left;
+}
+div.nav_bar h2{
+    /* position: absolute;
+    right: 0; */
+    width: 140px;
+    height: 30px;
+    text-align: center;
+    float: right;
+}
+div.nav_options{
+    position: relative;
+    /* right: 5px; */
+    flex-direction: column;
+}
+div.nav_bar h2 a{
+    font-family: 'novel-mono-pro', 'sans-serif';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.09375rem;
+    line-height: 29px;
+    color: #fff;
+    text-decoration: none;
+}
+/* #main_nav ul{
+	margin: 0;
+	padding: 0; 
+} */
+
+#main_nav ul li a{
+	display: block;
+	margin: .25em .15em;
+	padding: 1.25em;
+    background-color: #598589;
+	color: white;
+	text-align: center;
+    text-decoration: none;
+}
+
+#main_nav ul li a:hover{
+	background-color: #FEC39C;
+	text-decoration: none; 
+}
+
+
+/* toggle styles */
+.no-js .hamburger{
+    display: none;
+}
+
+.js .hamburger{
+    margin-bottom: 0;
+}
+
+.js .nav_bar .hamburger a{
+    width: 100%;
+    text-align: center;
+    color: white;
+    display: block;
+    padding: .5em;
+}
+
+.js nav[role=navigation]{
+    overflow: hidden;
+    max-height: 0;
+    transition: all 1s;
+}
+
+.js nav[role=navigation].is-active{
+    max-height: 30em;
+}
+
+
+
+
+
+
+
+
+
+/* Font Family */
+
+/* 
+Bely
+font-family: bely, serif;
+
+Regular
+font-family: bely, serif;
+font-weight: 400;
+font-style: normal;
+
+Italic
+font-family: bely, serif;
+font-weight: 400;
+font-style: italic;
+
+Bold
+font-family: bely, serif;
+font-weight: 700;
+font-style: normal;
+
+Bold Italic
+font-family: bely, serif;
+font-weight: 700;
+font-style: italic;
+
+
+Bely Display
+font-family: bely-display, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+
+
+Novel Mono Pro Bold
+font-family: novel-mono-pro, sans-serif;
+font-weight: 700;
+font-style: normal;
+
+
+Novel Mono Pro Bold It
+font-family: novel-mono-pro, sans-serif;
+font-weight: 700;
+font-style: italic;
+
+
+Novel Mono Pro Regular
+font-family: novel-mono-pro, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+
+Novel Mono Pro Regular Italic
+font-family: novel-mono-pro, sans-serif;
+font-weight: 400;
+font-style: italic;
+
+ */
+
