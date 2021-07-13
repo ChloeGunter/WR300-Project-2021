@@ -303,6 +303,15 @@ section.grid > div {
     grid-column: 3 / span 2;
     grid-row: 2 / span 2;
 } */
+
+figure.exhibit_details_text{
+    flex-direction: column;
+    min-height: 100%;
+    justify-content: space-between;
+}
+
+
+
 section.exhibit_details figure h1{
     font-size: 1.25rem;
     padding-bottom: 5px;
