@@ -13,6 +13,10 @@ display: table;
 clear: both;
 }
 
+/* .flex{
+    display: flex;
+} */
+
 body{
     font-size: 100%;
     font-family: 'bely', serif;
@@ -199,7 +203,7 @@ div.nav_bar h2 a{
     transition: all 1s;
 }
 
-.js nav[role=navigation].is-active{
+.js nav[role=navigation].active{
     max-height: 30em;
 }
 

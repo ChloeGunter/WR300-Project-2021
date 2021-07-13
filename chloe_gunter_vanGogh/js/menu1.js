@@ -3,6 +3,10 @@
 
 $('html').removeClass('no-js').addClass("js");
 
+let menu = $('#main_nav'); //the menu itself
+let menuBtn =$('.hamburger'); //the hamburger button
+
 $('button.hamburger').click( function(){
- $('button.hamburger, #main_nav').toggleClass('is-active');
+ $(this).toggleClass('is-active');
+ menu.toggleClass('active');
 })
