@@ -217,6 +217,9 @@ nav{
 
 /* Main Styles */
 
+
+/* Hero */
+
 section.hero{
     text-align: center;
 }
@@ -256,7 +259,7 @@ section.hero h2 a{
     color: white;
 }
 
-
+/* About Exhibit */
 
 figure.about_exhibit{
     background-image: url(../images/about_exhibit_home.jpg);
@@ -277,32 +280,6 @@ section.exhibit_details figure{
     width: 49%;
     padding: 3px;
 }
-/* section.grid{
-display: grid;
-grid-template-columns: auto auto auto auto;
-grid-gap: 10px;
-padding: 10px;
-}
-section.grid > div {
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
-}
-.item1 {
-    grid-column: 1 / span 2;
-  }
-.item2 {
-    grid-column: 1 / span 2;
-    grid-row: 2 / span 2;
-}
-.item3 {
-    grid-column: 3 / span 2;
-}
-.item4 {
-    grid-column: 3 / span 2;
-    grid-row: 2 / span 2;
-} */
 
 figure.exhibit_details_text{
     flex-direction: column;
@@ -310,7 +287,7 @@ figure.exhibit_details_text{
     justify-content: space-between;
 }
 
-
+/* Exhibit Details */
 
 section.exhibit_details figure h1{
     font-size: 1.25rem;
@@ -327,14 +304,217 @@ section.exhibit_details :last-child p{
     padding-bottom: 0.75rem;
 }
 section.exhibit_details h2{
-    width: 85px;
-    height: 23px;
-    margin-bottom: 5px;
+    width: 80px;
+    height: 20px;
 }
-/* section.exhibit_details .item2{
-    justify-content: flex-end;
-} */
+section.exhibit_details h2 a{
+    font-family: 'novel-mono-pro', 'sans-serif';
+    font-weight: 600;
+    font-style: normal;
+    font-size: 0.875rem;
+    text-decoration: none;
+    line-height: 1.25rem;
+    color: white;
+}
 
+/* Purchase Tickets */
+
+section.purchase_tickets{
+    background-image: url(../images/purchase_tickets_home.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 300px;
+    text-align: center;
+    color: white;
+}
+section.purchase_tickets h1{
+    text-align: center;
+    font-size: 2rem;
+    padding: 18px 0 40px 0;
+}
+section.purchase_tickets figure.pricing{
+    background-color: rgba(87, 135, 144, .61);
+    min-height: 65px;
+    font-family: 'Novel Mono Pro';
+    width: 80%;
+    padding: 9px 12px;
+    margin: 0 auto;
+}
+section.purchase_tickets h3{
+    font-size: 13.25px;
+}
+section.purchase_tickets p{
+    font-size: 8px;
+    text-align: left;
+    padding: 3px 0;
+}
+section.purchase_tickets h2{
+    margin-top: 7px;
+    width: 83px;
+    height: 20px;
+}
+section.purchase_tickets h2 a{
+    font-family: 'novel-mono-pro', 'sans-serif';
+    font-weight: 600;
+    font-style: normal;
+    font-size: 0.75rem;
+    text-decoration: none;
+    line-height: 1.25rem;
+    color: white;
+}
+
+section.faq h1 {
+    font-size: 2rem;
+    line-height: 2.25rem;
+    text-align: center;
+    padding: 10px 0 18px;
+}
+.accordin_item {
+    font-family: bely, serif;
+    font-weight: 400;
+    font-style: italic;
+    background-color: #598589;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: white solid 1px;
+}
+.active, .accordin_item:hover {
+    font-family: 'Bely Italic';
+    font-weight: bold;
+    background-image: url(../images/faq_hover.jpg);
+    background-size: cover;
+}
+  
+.accordin_body {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+
+figure.email_questions {
+    text-align: center;
+    padding-bottom: 25px;
+}
+figure.email_questions h1 {
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+    padding: 0;
+}
+figure.email_questions p {
+  font-size: .875rem;
+}
+figure.email_questions a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #2c3c3f;
+}
+figure.email_questions a:hover {
+  color: #f55612;
+}
+
+
+section.about_artist {
+    background-image: url(../images/about_artist_home.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 120px;
+    padding: 55px;
+}
+h2.about_artist_button {
+    width: 180px;
+    height: 20px;
+    margin: 0 auto;
+}
+h2.about_artist_button a{
+    font-family: 'novel-mono-pro', 'sans-serif';
+    font-weight: 600;
+    font-style: normal;
+    font-size: 0.875rem;
+    text-decoration: none;
+    line-height: 1.25rem;
+    color: white;
+}
+
+footer{
+    background-color:#598589;
+    padding: 5px 10px;
+}
+footer section.flex {
+    flex-direction: column;
+}
+footer figure{
+    padding: 0 10px;
+}
+footer img {
+    min-width: 110px;
+    padding: 35px 0 0;
+}
+footer h1{
+    font-size: 13px;
+    line-height: 10px;
+}
+footer figcaption a {
+    font-size: 9px;
+    font-weight: bold;
+    line-height: 15px;
+    text-decoration: none;
+    color: white;
+}
+footer a {
+    font-size: 15px;
+    line-height: 20px;
+    color: white;
+}
+footer p{
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+    padding-bottom: 10px;
+}
+footer a:hover {
+    color:royalblue;
+}
+
+/* Form */
+
+form.emailform input[placeholder="YOUR EMAIL"]{
+    font-size: 0.675rem;
+    color: #000000;
+    font-family: 'Antonio', sans-serif;
+    height: 22px;
+    border: none;
+    width: 100px;
+    padding-left: 8px;
+
+}
+
+form.emailform input[value="SIGN ME UP"] {
+    color: white;
+    background: none;
+    border: none;
+    font-family: 'novel-mono-pro', 'sans-serif';
+    font-weight: 600;
+    font-style: normal;
+    font-size: 0.75rem;
+    width: 80px;
+}
+
+
+
+
+div.copyright {
+    text-align: center;
+    font-size: 7px;
+    font-weight: bold;
+    line-height: 16px;
+    background-color: grey;
+    color: white;
+}
 
 
 
