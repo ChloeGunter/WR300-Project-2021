@@ -264,9 +264,8 @@ section.hero h2 a{
 
 .dhome figure.about_exhibit .wrap{
     float: right;
-	shape-outside: polygon(44% 19%, 73% 0, 100% 0, 100% 100%, 72% 100%, 58% 80%, 49% 65%, 40% 44%);
+    shape-outside: polygon(46.9% 19%, 73% 0px, 100% 0px, 99.03% 96.43%, 69.1% 96.08%, 60.26% 79.29%, 52.55% 63.93%, 45.16% 43.29%);
 }
-
 .dhome figure.about_exhibit{
     /* background-image: url(../images/about_exhibit_home.jpg);
     background-repeat: no-repeat;
@@ -327,13 +326,24 @@ section.exhibit_details h2 a{
 
 /* Purchase Tickets */
 
+div.purchase_tickets_parent {
+    position: relative;
+    padding-bottom: 90.344%;
+    height: 0;
+    margin-bottom: 1em;
+}
+
 section.purchase_tickets{
     background-image: url(../images/purchase_tickets_home.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
-    min-height: 300px;
-    text-align: center;
+    background-size: cover;
+    /* min-height: 300px; */
     color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 section.purchase_tickets h1{
     text-align: center;
@@ -346,10 +356,41 @@ section.purchase_tickets figure.pricing{
     font-family: 'Novel Mono Pro';
     width: 80%;
     padding: 9px 12px;
-    margin: 0 auto;
+    position: absolute;
+    top: calc(50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-section.purchase_tickets h3{
+ul.pricing_table {
+    max-width: 40em;
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none;
+}
+/* ul.pricing_table li:first-child{
+    width: 33%;
+} */
+ul.pricing_table li:before {
+    color: rgba(255, 255, 255, 0.673);
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content:
+"...................."
+"...................."
+"...................."
+"...................."
+}
+ul.pricing_table span:first-child {
+    padding-right: 0.33em;
+}
+ul.pricing_table span + span {
+    float: right;
+    padding-left: 0.33em;
+}
+section.pricing_table li{
     font-size: 13.25px;
+    text-align: left;
 }
 section.purchase_tickets p{
     font-size: 8px;
