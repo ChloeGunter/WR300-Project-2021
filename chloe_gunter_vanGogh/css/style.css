@@ -222,6 +222,7 @@ nav{
 
 section.hero{
     text-align: center;
+    padding-bottom: 30px;
 }
 
 section.hero h1{
@@ -261,10 +262,19 @@ section.hero h2 a{
 
 /* About Exhibit */
 
-figure.about_exhibit{
+.dhome figure.about_exhibit .wrap{
+    float: right;
+	shape-outside: polygon(44% 19%, 73% 0, 100% 0, 100% 100%, 72% 100%, 58% 80%, 49% 65%, 40% 44%);
+	width: 245px;
+	height: 180px;
+}
+
+.dhome figure.about_exhibit{
     background-image: url(../images/about_exhibit_home.jpg);
+    background-repeat: no-repeat;
     background-size: 100%;
-    padding: 10px 7px;
+    text-align: left;
+    padding: 0 0 30px 10px;
 }
 
 figure.about_exhibit h1{
