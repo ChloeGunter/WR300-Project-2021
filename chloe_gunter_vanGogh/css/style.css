@@ -265,14 +265,12 @@ section.hero h2 a{
 .dhome figure.about_exhibit .wrap{
     float: right;
 	shape-outside: polygon(44% 19%, 73% 0, 100% 0, 100% 100%, 72% 100%, 58% 80%, 49% 65%, 40% 44%);
-	width: 245px;
-	height: 180px;
 }
 
 .dhome figure.about_exhibit{
-    background-image: url(../images/about_exhibit_home.jpg);
+    /* background-image: url(../images/about_exhibit_home.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100%; */
     text-align: left;
     padding: 0 0 30px 10px;
 }
