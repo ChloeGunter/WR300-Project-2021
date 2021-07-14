@@ -225,7 +225,7 @@ section.hero{
 }
 
 section.hero h1{
-    font-size: 1.875rem;
+    font-size: 1.75rem;
 }
 
 section.hero p{
@@ -238,7 +238,7 @@ section.hero :nth-child(2){
     margin: 0 auto;
 }
 
-section.hero :nth-child(3){
+section.hero .date{
     font-size: 1rem;
     font-weight: bold;
     padding: 20px 0 10px 0;
@@ -518,25 +518,49 @@ div.copyright {
 
 
 /* About Page */
+
+  .dgallery section.hero{
+    background-image: url(../images/gallery_page_hero.jpg);
+  }
+  .dgallery .wrap {  
+	float: right;
+	shape-outside: polygon(22% 11%, 46% 0, 100% 0, 100% 100%, 63% 100%, 51% 85%, 34% 66%, 22% 41%);
+	width: 200px;
+	height: 250px;
+  }
+
+.dgallery section.hero p{
+    padding-bottom: 20px;
+}
+.dlocations section.hero{
+    background-image: url(../images/locations_page_hero.jpg);
+}
+.dlocations .wrap {  
+	float: right;
+	shape-outside: polygon(19% 15%, 46% 0, 100% 0, 100% 100%, 63% 100%, 43% 89%, 29% 69%, 19% 46%);
+	width: 200px;
+	height: 240px;
+  }
+
+.dlocations section.hero p{
+    padding-bottom: 25px;
+}
+  
+
+
 .dabout section.hero,
 .dgallery section.hero,
 .dlocations section.hero {
-    background-image: url(../images/about_page_hero.jpg);
     background-repeat: no-repeat;
     background-size: 130%;
     text-align: left;
-    min-height: 352px;
     padding-left: 10px;
 }
 .dabout section.hero h1,
 .dgallery section.hero h1,
 .dlocations section.hero h1 {
-    padding-top: 95px;
-}
-.dabout section.hero p,
-.dgallery section.hero p,
-.dlocations section.hero p{
-padding-bottom: 20px;
+    padding-top: 110px;
+    padding-bottom: 5px;
 }
 .dabout section.hero :nth-child(2),
 .dgallery section.hero :nth-child(2),
@@ -548,30 +572,61 @@ padding-bottom: 20px;
 .dlocations section.hero h2 {
     margin: 0;
 }
+.dabout section.hero .wrap {  
+	float: right;
+	shape-outside: polygon(22% 11%, 46% 0, 100% 0, 100% 100%, 63% 100%, 43% 90%, 33% 68%, 22% 41%);
+	width: 200px;
+	height: 250px;
+  }
+  .dabout section.hero{
+    background-image: url(../images/about_page_hero.jpg);
+  }
+  .dabout section.hero p{
+    font-size: .65rem;
+    padding-bottom: 20px;
+}
+.dabout .rightwrap {  
+	float: left;
+	shape-outside: polygon(45% 18%, 35% 0, 0 0, 0 100%, 49% 100%, 61% 91%, 69% 67%, 67% 46%);
+	width: 245px;
+	height: 180px;
+  }
+  .dabout .leftwrap {  
+	float: right;
+	shape-outside: polygon(70% 24%, 73% 0, 100% 0, 100% 100%, 49% 100%, 41% 76%, 33% 49%, 56% 37%);
+	width: 250px;
+	height: 210px;
+  }
 body.dabout main figure.right_align{
+    background-image: url(../images/about_page_right_align.jpg);
+    background-repeat: no-repeat;
+    background-size: 95%;
     text-align: right;
-    width: 225px;
 }
 body.dabout main figure.right_align h1{
-    font-size: 27px;
-    line-height: 27px;
-    padding-top: 40px;
+    font-size: 22px;
+    line-height: 20px;
+    padding-top: 20px;
 }
 body.dabout main figure.right_align figcaption{
-    font-size: 13px;
+    font-size: 12px;
     line-height: 15px;
-    padding-top: 15px;
+    padding-top: 10px;
+}
+body.dabout main figure.left_align{
+    background-image: url(../images/about_page_left_align.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 body.dabout main figure.left_align{
     text-align: left;
 }
 body.dabout main figure.left_align h1{
-    font-size: 27px;
-    line-height: 30px;
-    padding-top: 40px;
+    font-size: 20px;
+    line-height: 25px;
+    padding-top: 20px;
 }
 body.dabout main figure.left_align figcaption{
-    width: 200px;
     font-size: 13px;
     line-height: 15px;
     padding-top: 15px;
@@ -591,6 +646,64 @@ section.collapsing_gallery div.flex img{
 section.collapsing_gallery2{
     flex-direction: row;
 }
+section.collapsing_gallery2 img{
+    width: 50%;
+}
+section.collapsing_gallery2 div.flex img{
+    width: 100%;
+}
+section.collapsing_gallery2 div.flex {
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+  /* Locations Page */
+main.locations_list{
+      padding: 5px 5px 25px;
+  }
+  main.dlocations section.left-align h1,
+  main.dlocations section.left-align h2,
+  main.dlocations section.right-align h1,
+  main.dlocations section.right-align h2  {
+      font-size: 32px;
+  }
+  main.dlocations section.left-align h3,
+  main.dlocations section.left-align h3,
+  main.dlocations section.right-align h3,
+  main.dlocations section.right-align h3 {
+      font-size: 18px;
+      line-height: 20px;
+      font-weight: bold;
+      padding-top: 10px;
+  }
+  main.dlocations section.left-align h4 a,
+  main.dlocations section.left-align h4 a,
+  main.dlocations section.right-align h4 a,
+  main.dlocations section.right-align h4 a {
+      font-size: 15px;
+      line-height: 17px;
+      font-family: 'bely', 'serif';
+      font-weight: 700;
+      font-style: normal;
+      text-decoration: none;
+      color:#598589;
+  }
+  main.dlocations section.left-align p,
+  main.dlocations section.left-align p,
+  main.dlocations section.right-align p,
+  main.dlocations section.right-align p {
+      font-size: 15px;
+      line-height: 16px;
+      font-family: 'bely', 'serif';
+      font-weight: 400;
+      font-style: normal;
+  }
+  
+  main.dlocations section.right-align {
+      text-align: right;
+      padding: 10px 0;
+  }
 
 
 
