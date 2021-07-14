@@ -517,6 +517,82 @@ div.copyright {
 }
 
 
+/* About Page */
+.dabout section.hero,
+.dgallery section.hero,
+.dlocations section.hero {
+    background-image: url(../images/about_page_hero.jpg);
+    background-repeat: no-repeat;
+    background-size: 130%;
+    text-align: left;
+    min-height: 352px;
+    padding-left: 10px;
+}
+.dabout section.hero h1,
+.dgallery section.hero h1,
+.dlocations section.hero h1 {
+    padding-top: 95px;
+}
+.dabout section.hero p,
+.dgallery section.hero p,
+.dlocations section.hero p{
+padding-bottom: 20px;
+}
+.dabout section.hero :nth-child(2),
+.dgallery section.hero :nth-child(2),
+.dlocations section.hero :nth-child(2){
+    margin: 0;
+}
+.dabout section.hero h2,
+.dgallery section.hero h2,
+.dlocations section.hero h2 {
+    margin: 0;
+}
+body.dabout main figure.right_align{
+    text-align: right;
+    width: 225px;
+}
+body.dabout main figure.right_align h1{
+    font-size: 27px;
+    line-height: 27px;
+    padding-top: 40px;
+}
+body.dabout main figure.right_align figcaption{
+    font-size: 13px;
+    line-height: 15px;
+    padding-top: 15px;
+}
+body.dabout main figure.left_align{
+    text-align: left;
+}
+body.dabout main figure.left_align h1{
+    font-size: 27px;
+    line-height: 30px;
+    padding-top: 40px;
+}
+body.dabout main figure.left_align figcaption{
+    width: 200px;
+    font-size: 13px;
+    line-height: 15px;
+    padding-top: 15px;
+}
+
+
+/* Gallery Page */
+section.collapsing_gallery{
+    flex-direction: column;
+}
+section.collapsing_gallery div.flex {
+    flex-wrap: wrap;
+}
+section.collapsing_gallery div.flex img{
+    width: 50%;
+}
+section.collapsing_gallery2{
+    flex-direction: row;
+}
+
+
 
 
 
