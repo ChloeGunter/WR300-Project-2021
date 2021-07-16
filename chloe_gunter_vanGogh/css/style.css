@@ -634,7 +634,7 @@ div.copyright {
 }
 .dabout section.hero .wrap {  
 	float: right;
-	shape-outside: polygon(22% 11%, 46% 0, 100% 0, 100% 100%, 63% 100%, 43% 90%, 33% 68%, 22% 41%);
+	shape-outside: polygon(17.00% 21.40%, 41% -2px, 100% 0px, 99.5% 94.8%, 63% 94.4%, 44.5% 86.4%, 33% 68%, 14.5% 45.8%);
 	width: 200px;
 	height: 250px;
   }
