@@ -231,7 +231,7 @@ section.hero h1{
 }
 
 section.hero p{
-    line-height: 0.875rem;
+    line-height: 1.125rem;
 }
 
 section.hero :nth-child(2){
@@ -264,7 +264,7 @@ section.hero h2 a{
 
 .dhome section.about_exhibit .wrap{
     float: right;
-    shape-outside: polygon(46.9% 19%, 73% 0px, 100% 0px, 99.03% 96.43%, 69.1% 96.08%, 60.26% 79.29%, 52.55% 63.93%, 45.16% 43.29%);
+    shape-outside: polygon(44.34% 23.82%, 73% 0px, 100% 0px, 99.03% 96.43%, 69.1% 96.08%, 60.26% 79.29%, 52.55% 63.93%, 45.16% 43.29%);
 }
 .dhome section.about_exhibit{
     /* background-image: url(../images/about_exhibit_home.jpg);
@@ -301,7 +301,7 @@ section.exhibit_details_text{
 
 div.exhibit_details section h1{
     font-size: 1.65rem;
-    padding-bottom: 5px;
+    padding: 10px 0 5px;
 }
 div.exhibit_details :last-child h3{
     font-weight: bold;
@@ -405,7 +405,7 @@ section.pricing_table li{
     text-align: left;
 }
 section.purchase_tickets p{
-    font-family: novel-mono-pro, sans-serif;
+    font-family: 'novel-mono-pro', 'sans-serif';
     font-weight: 400;
     font-style: italic;
     text-align: left;
@@ -432,9 +432,10 @@ section.faq h1 {
     padding: 0 0 18px;
 }
 .accordin_item {
-    font-family: bely, serif;
+    font-family: 'bely', 'serif';
     font-weight: 400;
     font-style: italic;
+    font-size: 1rem;
     background-color: #598589;
     color: white;
     cursor: pointer;
@@ -478,18 +479,30 @@ figure.email_questions a:hover {
   color: #f55612;
 }
 
-
+div.about_artist_parent{
+    position: relative;
+    padding-bottom: 27.59%;
+    height: 0;
+    margin-bottom: 1em;
+}
 section.about_artist {
     background-image: url(../images/about_artist_home.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
-    height: 120px;
-    padding: 55px;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* padding: 55px; */
 }
 h2.about_artist_button {
-    width: 180px;
+    width: 200px;
     height: 20px;
-    margin: 0 auto;
+    position: absolute;
+    top: calc(65%);
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 h2.about_artist_button a{
     font-family: 'novel-mono-pro', 'sans-serif';
@@ -584,7 +597,7 @@ div.copyright {
   }
   .dgallery .wrap {  
 	float: right;
-	shape-outside: polygon(22% 11%, 46% 0, 100% 0, 100% 100%, 63% 100%, 51% 85%, 34% 66%, 22% 41%);
+	shape-outside: polygon(10.5% 25.8%, 46% 0px, 100% 0px, 99.5% 94.8%, 63% 94.4%, 51.50% 85.00%, 34% 66%, 13% 47.4%);
 	width: 200px;
 	height: 250px;
   }
@@ -611,7 +624,6 @@ div.copyright {
     background-repeat: no-repeat;
     background-size: 130%;
     text-align: left;
-    padding-left: 10px;
 }
 .dabout section.hero h1,
 .dgallery section.hero h1,
@@ -650,9 +662,9 @@ div.copyright {
   }
   .dabout .leftwrap {  
 	float: right;
-	shape-outside: polygon(70% 24%, 73% 0, 100% 0, 100% 100%, 49% 100%, 41% 76%, 33% 49%, 56% 37%);
-	width: 250px;
-	height: 210px;
+	shape-outside: polygon(70% 24%, 69.4% 26px, 99.2% 23px, 100% 100%, 46.6% 100.48%, 34.2% 91.23%, 33.8% 45.19%, 46.98% 27.91%);
+	width: 255px;
+	height: 220px;
   }
 body.dabout main section.right_align{
     background-image: url(../images/about_page_right_align.jpg);
@@ -667,7 +679,7 @@ body.dabout main section.right_align h1{
     padding-bottom: 10px;
 }
 body.dabout main section.right_align p{
-    padding: 0 0 20px 15px;
+    padding: 0 0 18%;
 }
 body.dabout main section.left_align{
     background-image: url(../images/about_page_left_align.jpg);
@@ -679,14 +691,12 @@ body.dabout main section.left_align{
     text-align: left;
 }
 body.dabout main section.left_align h1{
-    font-size: 20px;
+    font-size: 1.3rem;
     line-height: 25px;
-    padding-top: 5px;
+    padding-bottom: 10px;
 }
-body.dabout main section.left_align figcaption{
-    font-size: 13px;
-    line-height: 15px;
-    padding-top: 15px;
+body.dabout main section.left_align p{
+    padding: 0 0 18%;
 }
 
 
@@ -767,7 +777,77 @@ main.locations_list p:nth-of-type(2n) {
 
 
 
-@media and screen (min-width: 400px)
+@media screen and (min-width: 334px){
+
+.dabout section.hero .wrap {
+    width: 210px;
+    height: 260px;
+}
+
+.dabout .leftwrap {
+    width: 279px;
+    height: 235px;
+}
+
+}
+@media screen and (min-width: 360px){
+
+.dabout section.hero .wrap {
+    width: 235px;
+        height: 300px;
+}
+
+.dabout .rightwrap {
+    width: 285px;
+    height: 230px;
+}
+
+.dabout .leftwrap {
+    width: 280px;
+    height: 265px;
+}
+    
+}
+@media screen and (min-width: 405px){
+
+.dabout section.hero .wrap {
+    width: 270px;
+    height: 335px;
+}
+
+.dabout .rightwrap {
+    width: 310px;
+    height: 240px;
+}
+
+.dabout .leftwrap {
+    width: 335px;
+    height: 285px;
+}
+    
+}
+@media screen and (min-width: 430px){
+
+.dabout section.hero .wrap {
+    width: 270px;
+    height: 335px;
+    padding-bottom: 20px;
+}
+
+.dabout .leftwrap {
+    width: 377px;
+    height: 294px;
+}
+    
+}
+@media screen and (min-width: 460px){
+
+.dabout section.hero .wrap {
+    width: 295px;
+    height: 390px;
+}
+    
+}
 
 
 
