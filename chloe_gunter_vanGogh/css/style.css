@@ -134,7 +134,7 @@ header.top_nav{
 }
 
 header.top_nav a[href="index.html"] {
-    width: 60%;
+    width: 45%;
 }
 header.top_nav h2{
     width: 110px;
@@ -828,6 +828,11 @@ main.locations_list p:nth-of-type(2n) {
 }
 @media screen and (min-width: 430px){
 
+header.top_nav a[href="index.html"] {
+    width: 35%;
+}
+        
+
 .dabout section.hero .wrap {
     width: 270px;
     height: 335px;
@@ -841,6 +846,7 @@ main.locations_list p:nth-of-type(2n) {
     
 }
 @media screen and (min-width: 460px){
+   
 
 .dabout section.hero .wrap {
     width: 295px;
@@ -849,7 +855,37 @@ main.locations_list p:nth-of-type(2n) {
     
 }
 
+@media screen and (min-width: 760px){
 
+
+button.hamburger{
+    display: none;
+}
+
+header.top_nav a[href="index.html"] {
+    width: 25%;
+}
+
+.js nav[role=navigation]{
+    max-height: 30em;
+}
+
+#main-nav ul{
+	width: 100%;
+	text-align: center;
+}
+
+#main-nav ul li{
+	display: inline-block;
+}
+
+#main-nav ul li a{
+ border-radius: 5px;
+}
+
+
+
+}
 
 
 
