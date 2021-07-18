@@ -594,7 +594,7 @@ div.copyright {
   }
   .dgallery .wrap {  
 	float: right;
-	shape-outside: polygon(10.5% 25.8%, 46% 0px, 100% 0px, 99.5% 94.8%, 63% 94.4%, 51.50% 85.00%, 34% 66%, 13% 47.4%);
+    shape-outside: polygon(17.86% 23.85%, 46% 0px, 100% 0px, 99.5% 94.8%, 63% 94.4%, 33.90% 80.97%, 30.9% 66.65%, 18.76% 49.87%);
 	width: 200px;
 	height: 250px;
   }
@@ -689,7 +689,7 @@ body.dabout main section.left_align{
 }
 body.dabout main section.left_align h1{
     font-size: 1.3rem;
-    line-height: 25px;
+    line-height: 1.5625rem;
     padding-bottom: 10px;
 }
 body.dabout main section.left_align p{
@@ -826,7 +826,7 @@ header.top_nav a[href="index.html"] {
 }
 .dabout section.hero .wrap {
     width: 70%;
-height: 55%;
+    height: 45%;
     padding-bottom: 20px;
 }
 
@@ -845,10 +845,11 @@ height: 55%;
     }
     .dabout section.hero .wrap {
         width: 80%;
-        height: 60%;
+        min-height: 60%;
     }
 
 }
+
 
 @media screen and (min-width: 760px){
 
@@ -877,6 +878,7 @@ header.top_nav a[href="index.html"] {
 #main-nav ul li a{
  border-radius: 5px;
 }
+
 
 
 
@@ -1044,6 +1046,10 @@ footer figure {
 
 /* About Page */
 
+.dabout section.hero .wrap {
+    width: 85%;
+    min-height: 100%;
+}
 .dabout div.hero_parent {
     position: relative;
     padding-bottom: 71.4011%;
@@ -1061,24 +1067,105 @@ footer figure {
     width: 100%;
     height: 100%;
 }
-.dabout section.hero{
-    position: absolute;
-}
-/* .dabout section.hero .wrap {
-    width: 70%;
-    height: 60%;
-}
-section.hero h1 {
+.dabout section.hero h1, 
+.dgallery section.hero h1, 
+.dlocations section.hero h1 {
     font-size: 2.3125rem;
-    padding: 30px 0 15px;
-}
-.dabout section.hero h1, .dgallery section.hero h1, .dlocations section.hero h1 {
     padding-top: 80px;
 }
-section.hero p {
+.dabout section.hero p,
+.dgallery section.hero p, 
+.dlocations section.hero p {
     font-size: 1.125rem;
-} */
+}
+body.dabout main section.right_align h1,
+body.dabout main section.left_align h1{
+    font-size: 2.5rem;
+    line-height: 2.45rem;
+    padding-bottom: 30px;
+}
+body.dabout main section.right_align p,
+body.dabout main section.left_align p{
+    font-size: 1.1875rem;
+}
 
+div.wheatfield_parent{
+    position: relative;
+    padding-bottom: 64.674%;
+    height: 0;
+    margin-bottom: 1em;
+}
+div.wheatfield{
+    background-image: url(../images/about_page_right_align.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+}
+
+body.dabout main section.right_align,
+body.dabout main section.left_align{
+    background-image: none;
+}
+.dabout .rightwrap {
+    width: 85%;
+    height: 90%;
+}
+div.congregation_parent{
+    position: relative;
+    padding-bottom: 73.417%;
+    height: 0;
+    margin-bottom: 1em;
+}
+div.congregation{
+    background-image: url(../images/about_page_left_align.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+}
+.dabout .leftwrap {
+    shape-outside: polygon(46.27% 20.38%, 69.4% 26px, 99.2% 23px, 100% 100%, 46.6% 100.48%, 34.2% 91.23%, 33.8% 45.19%, 42.96% 31.15%);
+    width: 90%;
+    height: 100%;
+}
+
+
+/* Gallery Page */
+
+.dgallery section.hero .wrap {
+    width: 85%;
+    min-height: 100%;
+}
+.dgallery div.hero_parent {
+    position: relative;
+    padding-bottom: 71.4011%;
+    height: 0;
+    margin-bottom: 1em;
+}
+.dgallery section.hero{
+    background-image: url(../images/gallery_page_hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* min-height: 300px; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.dabout section.hero p {
+    font-size: 1.125rem;
+}
 
 
 /* Form */
