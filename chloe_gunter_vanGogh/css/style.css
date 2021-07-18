@@ -824,9 +824,9 @@ main.locations_list p:nth-of-type(2n) {
 header.top_nav a[href="index.html"] {
     width: 35%;
 }
-        
-
 .dabout section.hero .wrap {
+    width: 70%;
+height: 55%;
     padding-bottom: 20px;
 }
 
@@ -844,8 +844,8 @@ header.top_nav a[href="index.html"] {
         min-height: 60%;
     }
     .dabout section.hero .wrap {
-        width: 75%;
-        height: 55%;
+        width: 80%;
+        height: 60%;
     }
 
 }
