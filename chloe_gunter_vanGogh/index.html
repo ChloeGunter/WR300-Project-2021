@@ -5,31 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://kit.fontawesome.com/f12efb326b.js" crossorigin="anonymous"></script>
   <title>Home Page</title>
+  <link rel="icon" href="images/logo_grey.png" type="image/gif">
   <link rel="stylesheet" href="https://use.typekit.net/lyj1kmp.css">
   <link href="css/reset.css" rel="stylesheet" type="text/css" />
   <link href="css/style.css" rel="stylesheet" type="text/css" />
 
 </head>
 <body class="dhome">
-<header class="top_nav flex">
-  <a href="index.html"><img src="images/logo_grey.png" alt="Beyond VanGogh Logo"></a>
-  <div class="nav_bar flex">
-  <button class="ticket_button"><a href="#purchase_tickets">TICKETS    <i class="fas fa-arrow-right"></i></a></button>
-  <button class="hamburger hamburger--squeeze" title="open navigation" type="button">
-    <span class="hamburger-box">
-      <span class="hamburger-inner"></span>
-    </span>
-  </button>
-</div>
-
-</header>
-<nav id="main_nav" role="navigation">
-  <ul class="global flex">
-    <a href="about.html"><li>ABOUT</li></a>
-    <a href="gallery.html"><li>GALLERY</li></a>
-    <a href="locations.html"><li>LOCATIONS</li></a>
-  </ul>
-</nav>
+  <header> 
+        <a href="index.html" class="logo"><img src="images/logo_grey.png" alt="logo"></a>
+        <a href="#purchase_tickets" class="purchase_tickets"><button class="ticket_button">TICKETS<i class="fas fa-arrow-right"></i></button></a> 
+        <button class="hamburger hamburger--squeeze" title="open navigation" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      <nav id="main_nav" role="navigation">
+        <ul class="global flex">
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li><a href="locations.html">LOCATIONS</a></li>
+        </ul>
+      </nav>
+    </header>
 
 <main>
   <section class="hero">
@@ -65,7 +63,7 @@
       <p>Wyland Center at Del Mar Fairgrounds:2260 Jimmy Durante Blvd, Del Mar, CA 92014</p>
       <h3>HEALTH AND SAFETY</h3>
       <p>Beyond Van Gogh is a walk-through exhibition that allows for 6ft distance between all attendees, and includes increased cleaning practices. Safety of the attendees is our top priority as we continue to follow the advice of public health agencies and government officials.</p>
-      <button class="more_button"><a href="pages/about.html#exhibit_details">MORE    <i class="fas fa-arrow-right"></i></a></button>
+      <button class="ticket_button"><a href="pages/about.html#exhibit_details">MORE    <i class="fas fa-arrow-right"></i></a></button>
     </div>
     <div>
       <img src="images/exhibit_details3_home.jpg" alt="Exhibit Image3">
@@ -93,25 +91,25 @@
 
   <section class="faq">
     <h1>Frequently Asked Questions</h1>
-    <article class="faq_accordin">
-      <button class="accordin_item">What safety measures are in place for Covid-19?</button>
-        <div class="accordin_body">
-          <p></p>
+    <article class="faq_accordion">
+      <button class="accordion_item">What safety measures are in place for Covid-19?</button>
+        <div class="accordion_body">
+          <p>-Beyond Van Gogh is following guidelines of masks required inside the venue, contactless transactions and timed ticket sales to help reduce congestion and capacity.</p>
         </div>
 
-      <button class="accordin_item">Where do I buy tickets?</button>
-        <div class="accordin_body">
-          <p></p>
+      <button class="accordion_item">Where do I buy tickets?</button>
+        <div class="accordion_body">
+          <p>-Tickets can be purchased right here at VanGoghSanDiego.com.</p>
         </div>
       
-      <button class="accordin_item">Is the show wheelchair accessible?</button>
-        <div class="accordin_body">
-          <p></p>
+      <button class="accordion_item">Is the show wheelchair accessible?</button>
+        <div class="accordion_body">
+          <p>-Yes. Wheelchairs, walkers, and scooters are all permitted.</p>
         </div>
       
-      <button class="accordin_item">Can I bring my service animal?</button>
-        <div class="accordin_body">
-          <p></p>
+      <button class="accordion_item">Can I bring my service animal?</button>
+        <div class="accordion_body">
+          <p>-Yes, we allow service animals such as guide dogs. No pets are permitted.</p>
         </div>
       
     </article>
@@ -161,6 +159,7 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="js/menu.js" type="text/javascript"></script>
+<script src="js/accordion.js" type="text/javascript"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
 
 

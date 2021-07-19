@@ -4,32 +4,30 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://kit.fontawesome.com/f12efb326b.js" crossorigin="anonymous"></script>
-  <title>Home Page</title>
+  <title>About Page</title>
+  <link rel="icon" href="images/logo_grey.png" type="image/gif">
   <link rel="stylesheet" href="https://use.typekit.net/lyj1kmp.css">
   <link href="css/reset.css" rel="stylesheet" type="text/css" />
   <link href="css/style.css" rel="stylesheet" type="text/css" />
 
 </head>
 <body class="dabout">
-<header class="top_nav flex">
-  <a href="index.html"><img src="images/logo_grey.png" alt="logo"></a>
-  <div class="nav_bar flex">
-  <button class="ticket_button"><a href="#purchase_tickets">TICKETS    <i class="fas fa-arrow-right"></i></a></button>
-  <button class="hamburger hamburger--squeeze" title="open navigation" type="button">
-    <span class="hamburger-box">
-      <span class="hamburger-inner"></span>
-    </span>
-  </button>
-</div>
-
+  <header> 
+    <a href="index.html" class="logo"><img src="images/logo_grey.png" alt="logo"></a>
+    <a href="#purchase_tickets" class="purchase_tickets"><button class="ticket_button">TICKETS<i class="fas fa-arrow-right"></i></button></a> 
+    <button class="hamburger hamburger--squeeze" title="open navigation" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+  <nav id="main_nav" role="navigation">
+    <ul class="global flex">
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="gallery.html">GALLERY</a></li>
+      <li><a href="locations.html">LOCATIONS</a></li>
+    </ul>
+  </nav>
 </header>
-<nav id="main_nav" role="navigation">
-  <ul class="global flex">
-    <a href="about.html"><li>ABOUT</li></a>
-    <a href="gallery.html"><li>GALLERY</li></a>
-    <a href="locations.html"><li>LOCATIONS</li></a>
-  </ul>
-</nav>
 
 
 <main class="dabout">
@@ -80,7 +78,7 @@
           <p>Wyland Center at Del Mar Fairgrounds:2260 Jimmy Durante Blvd, Del Mar, CA 92014</p>
           <h3>HEALTH AND SAFETY</h3>
           <p>Beyond Van Gogh is a walk-through exhibition that allows for 6ft distance between all attendees, and includes increased cleaning practices. Safety of the attendees is our top priority as we continue to follow the advice of public health agencies and government officials.</p>
-          <button class="more_button"><a href="pages/about.html#exhibit_details">MORE    <i class="fas fa-arrow-right"></i></a></button>
+          <button class="ticket_button"><a href="pages/about.html#exhibit_details">MORE    <i class="fas fa-arrow-right"></i></a></button>
         </div>
         <div>
           <img src="images/exhibit_details3_home.jpg" alt="Exhibit Image3">
@@ -89,28 +87,29 @@
     </div>
   </main>
 
-<footer class="flex">
-  <a href="index.html"><img src="images/logo_white.png" alt="logo"></a>
-  <section class="flex">
-    <figure>
-      <h1>Contact Us</h1>
-      <figcaption class="email_link"><a href="mailto:Hello@VanGoghSanDiego.com" target="_blank" title="mail">Hello@VanGoghSanDiego.com</a></figcaption>
-      <a href="https://www.facebook.com/" target="_blank" title="facebook"><i class="fab fa-facebook-square"></i></a>
-      <a href="https://www.instagram.com/" target="_blank" title="instagram"><i class="fab fa-instagram"></i></a>
-    </figure>
-    <figure>
-      <h1>Let Us Update You!</h1>
-      <p>Daily tickets will be limited, so interested guests are encouraged to SIGN UP to receive updates detailing dates, venue, and ticket on-sale!</p>
-      <form class="emailform flex" name="emailform" id="emailform" method="get" action="emailformprocessor.php">
-        <label for="email"></label>
-        <input type="text" name="email" id="email" class="fsize" placeholder="YOUR EMAIL" />
-  
-  
-        <button><input type="submit" name="submit" value="SIGN ME UP" class="sign_me_up_button" /></button>
-        </form>
-    </figure>
-  </section>
-</footer>
+  <footer class="flex">
+    <a href="index.html"><img src="images/logo_white.png" alt="Beyond VanGogh Logo"></a>
+    <section class="flex">
+      <figure>
+        <h1>Contact Us</h1>
+        <figcaption class="email_link"><a href="mailto:Hello@VanGoghSanDiego.com" target="_blank" title="mail">Hello@VanGoghSanDiego.com</a></figcaption>
+        <a href="https://www.facebook.com/" target="_blank" title="facebook"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" title="instagram"><i class="fab fa-instagram"></i></a>
+      </figure>
+      <figure>
+        <h1>Let Us Update You!</h1>
+        <p>Daily tickets will be limited, so interested guests are encouraged to SIGN UP to receive updates detailing dates, venue, and ticket on-sale!</p>
+        <form class="emailform flex" name="emailform" id="emailform" method="get" action="index.html" novalidate>
+          <label for="email"></label>
+          <input type="text" name="email" id="email" class="fsize" placeholder="YOUR EMAIL" />
+    
+    
+          <input type="hidden" name="did_submit" value="true">
+          <input type="submit" name="submit" value="SIGN ME UP" class="sign_me_up_button" />
+          </form>
+      </figure>
+    </section>
+  </footer>
 
 <div class="copyright">
   <small>© 2021 Beyond Van Gogh: The Immersive Experience. All Rights Reserved. | Privacy Policy</small>

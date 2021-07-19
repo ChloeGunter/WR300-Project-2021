@@ -8,6 +8,7 @@ include('parse.php');
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://kit.fontawesome.com/f12efb326b.js" crossorigin="anonymous"></script>
   <title>Home Page</title>
+  <link rel="icon" href="images/logo_grey.png" type="image/gif">
   <link rel="stylesheet" href="https://use.typekit.net/lyj1kmp.css">
   <link href="css/reset.css" rel="stylesheet" type="text/css" />
   <link href="css/style.css" rel="stylesheet" type="text/css" />
