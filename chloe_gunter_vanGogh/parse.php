@@ -2,7 +2,7 @@
 error_reporting(E_ALL & ~E_NOTICE);
 $did_submit = $_POST['did_submit'];
 
-var_dump($_POST);
+// var_dump($_POST);
 
 if($did_submit){
     
@@ -11,8 +11,8 @@ if($did_submit){
 
 
 //PHP Validation
-$valid = true;
-$errors = [];
+// $valid = true;
+// $errors = [];
 
 //checking for how this could fail.
 

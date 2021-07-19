@@ -522,9 +522,13 @@ section.faq h1 {
 .accordion_body {
     padding: 10px 18px;
     background-color: rgba(87, 135, 144, .61);
+    color: white;
     line-height: 1.25rem;
-    display: none;
     overflow: hidden;
+}
+
+.js .accordion_body{
+    display: none;
 }
 
 .accordion_item:after {
@@ -870,6 +874,31 @@ main.locations_list p:nth-of-type(2n) {
 }
 
 
+/* Welcome Page */
+
+section.welcome{
+    text-align: center;
+    padding: 10px 20px 30px;
+}
+
+section.welcome h1{
+    font-size: 1.75rem;
+    padding: 30px 0 15px;
+}
+
+section.welcome p{
+    line-height: 1.125rem;
+}
+
+section.welcome p.welcome{
+    font-weight: bold;
+    padding: 10px 0;
+    margin: 0 auto;
+}
+
+
+
+
 
 
 @media screen and (min-width: 334px){
@@ -1099,6 +1128,11 @@ section.faq h1 {
 }
 .accordion_item {
     font-size: 1.875rem;
+}
+.accordion_body {
+    font-size: 1.465rem;
+    line-height: 1.65rem;
+    padding: 20px 18px;
 }
 figure.email_questions h1 {
     font-size: 2.1875rem;
@@ -1352,9 +1386,9 @@ form.emailform input[value="SIGN ME UP"] {
 
 body{
     display: grid;
-    grid-template-areas:"sidebar content" "copy copy";
+    grid-template-areas:"sidebar content" "footer footer" "copy copy";
     grid-template-columns: 20% 80%;
-    grid-template-rows: auto 2em;
+    grid-template-rows: auto auto 2em;
   }
     
   header{
@@ -1378,10 +1412,23 @@ body{
     
   main{
     grid-area: content;
-  }
-    
+  }  
+footer{
+    margin-left: 20%;
+    grid-area: footer;
+}
+footer a.logo{
+    display: none;
+}
 .copyright{
   grid-area: copy;
+}
+
+header nav ul {
+    background-color: transparent;
+}
+#main_nav ul li{
+    border: transparent;
 }
 
 
