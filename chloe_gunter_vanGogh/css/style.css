@@ -122,7 +122,7 @@ h1{
     font-style: normal;
     color: #f55612;
 }
-h2{
+button{
     background-color: #f55612;
     text-align: center;
 }
@@ -136,11 +136,11 @@ header.top_nav{
 header.top_nav a[href="index.html"] {
     width: 45%;
 }
-header.top_nav h2{
+header.top_nav button{
     width: 110px;
     height: 25px;
 }
-header.top_nav h2 a{
+header.top_nav button a{
     font-family: 'novel-mono-pro', 'sans-serif';
     font-weight: 700;
     font-style: normal;
@@ -244,12 +244,12 @@ section.hero .date{
     margin: 0 auto;
 }
 
-section.hero h2{
+section.hero button{
     width: 98px;
     height: 20px;
     margin: 0 auto;
 }
-section.hero h2 a{
+section.hero button a{
     font-family: 'novel-mono-pro', 'sans-serif';
     font-weight: 600;
     font-style: normal;
@@ -309,11 +309,11 @@ div.exhibit_details :last-child p{
     line-height: 1rem;
     padding-bottom: 0.5rem;
 }
-div.exhibit_details h2{
+div.exhibit_details button{
     width: 80px;
     height: 20px;
 }
-div.exhibit_details h2 a{
+div.exhibit_details button a{
     font-family: 'novel-mono-pro', 'sans-serif';
     font-weight: 600;
     font-style: normal;
@@ -403,12 +403,12 @@ section.purchase_tickets p{
     text-align: left;
     padding: 3px 0;
 }
-section.purchase_tickets h2{
+section.purchase_tickets button{
     margin-top: 13px;
     width: 110px;
     height: 20px;
 }
-section.purchase_tickets h2 a{
+section.purchase_tickets button a{
     font-family: 'novel-mono-pro', 'sans-serif';
     font-weight: 600;
     font-style: normal;
@@ -488,7 +488,7 @@ section.about_artist {
     height: 100%;
     /* padding: 55px; */
 }
-h2.about_artist_button {
+button.about_artist_button {
     width: 200px;
     height: 20px;
     position: absolute;
@@ -496,7 +496,7 @@ h2.about_artist_button {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-h2.about_artist_button a{
+button.about_artist_button a{
     font-family: 'novel-mono-pro', 'sans-serif';
     font-weight: 600;
     font-style: normal;
@@ -521,13 +521,12 @@ footer h1{
 footer figure{
     padding: 0 10px;
 }
-/* footer img {
-    width: 120px;
-    padding: 5px 0 0 7px;
-} */
+footer.flex a img {
+    border: none;
+}
 footer > a[href="index.html"] {
     width: 45%;
-    max-width: 160px
+    max-width: 160px;
 }
 footer h1{
     font-size: 1.25rem;
@@ -539,7 +538,7 @@ footer figcaption a {
     color: white;
 }
 footer a {
-    line-height: 20px;
+    line-height: 1.25rem;
     color: white;
 }
 footer p{
@@ -579,9 +578,9 @@ form.emailform input[value="SIGN ME UP"] {
 
 div.copyright {
     text-align: center;
-    font-size: 7px;
+    font-size: 0.4375rem;
     font-weight: bold;
-    line-height: 16px;
+    line-height: 1rem;
     background-color: grey;
     color: white;
 }
@@ -633,9 +632,9 @@ div.copyright {
 .dlocations section.hero :nth-child(2){
     margin: 0;
 }
-.dabout section.hero h2,
-.dgallery section.hero h2,
-.dlocations section.hero h2 {
+.dabout section.hero button,
+.dgallery section.hero button,
+.dlocations section.hero button {
     margin: 0;
 }
 .dabout section.hero .wrap {  
@@ -672,7 +671,7 @@ body.dabout main section.right_align{
 }
 body.dabout main section.right_align h1{
     font-size: 1.375rem;
-    line-height: 20px;
+    line-height: 1.25rem;
     padding-bottom: 10px;
 }
 body.dabout main section.right_align p{
@@ -698,6 +697,11 @@ body.dabout main section.left_align p{
 
 
 /* Gallery Page */
+
+body.dgallery img {
+    border: 1px solid #fff;
+}
+
 section.collapsing_gallery{
     flex-direction: column;
 }
@@ -719,6 +723,7 @@ section.collapsing_gallery2 div.flex img{
 section.collapsing_gallery2 div.flex {
     justify-content: space-between;
     flex-direction: column;
+    width: 50%;
 }
 
 
@@ -727,15 +732,15 @@ main.locations_list{
       padding: 5px 5px 25px;
   }
   main.dlocations section.left-align h1,
-  main.dlocations section.left-align h2,
+  main.dlocations section.left-align button,
   main.dlocations section.right-align h1,
-  main.dlocations section.right-align h2  {
+  main.dlocations section.right-align button  {
       font-size: 2rem;
   }
   main.dlocations section.left-align h3,
   main.dlocations section.right-align h3 {
       font-size: 1.225em;
-      line-height: 28px;
+      line-height: 1.75rem;
       font-weight: bold;
       padding-top: 10px;
   }
@@ -746,7 +751,6 @@ main.locations_list{
       font-family: 'bely', 'serif';
       font-weight: 700;
       font-style: normal;
-      text-decoration: none;
       color:#598589;
   }
   main.dlocations section.left-align p,
@@ -897,7 +901,7 @@ section.about_exhibit p {
 
 div.exhibit_details{
     flex-direction: row;
-    padding: 10px;
+    padding: 50px 10px 10px;
 }
 div.exhibit_details figure,
 div.exhibit_details section{
@@ -1141,6 +1145,10 @@ div.congregation{
 
 /* Gallery Page */
 
+body.dgallery img {
+    border: 3px solid #fff;
+}
+
 .dgallery section.hero .wrap {
     width: 85%;
     min-height: 100%;
@@ -1155,7 +1163,6 @@ div.congregation{
     background-image: url(../images/gallery_page_hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    /* min-height: 300px; */
     position: absolute;
     top: 0;
     left: 0;
@@ -1163,9 +1170,56 @@ div.congregation{
     height: 100%;
 }
 
-.dabout section.hero p {
-    font-size: 1.125rem;
+
+/* Locations Page */
+
+.dlocations section.hero .wrap {
+    width: 85%;
+    min-height: 100%;
 }
+.dlocations div.hero_parent {
+    position: relative;
+    padding-bottom: 66.030%;
+    height: 0;
+    margin-bottom: 1em;
+}
+.dlocations section.hero{
+    background-image: url(../images/locations_page_hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+main.locations_list p:nth-of-type(2n) {
+    padding-bottom: 25px;
+}
+
+main.dlocations section.left-align h1, 
+main.dlocations section.left-align button, 
+main.dlocations section.right-align h1, 
+main.dlocations section.right-align button {
+    font-size: 2.8125rem;
+}
+main.dlocations section.left-align h3, 
+main.dlocations section.right-align h3 {
+    font-size: 1.5625em;
+    line-height: 2rem;
+}
+main.dlocations section.left-align h4, 
+main.dlocations section.right-align h4,
+main.dlocations section.left-align p, 
+main.dlocations section.right-align p {
+    font-size: 1.375rem;
+    line-height: 1.875rem;
+}
+
+
+
+
 
 
 /* Form */
