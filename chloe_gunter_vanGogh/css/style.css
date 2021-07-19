@@ -125,6 +125,7 @@ h1{
 button{
     background-color: #f55612;
     text-align: center;
+    border: none;
 }
 img{
     width: 100%
@@ -145,8 +146,9 @@ header.top_nav button a{
     font-weight: 700;
     font-style: normal;
     text-decoration: none;
-    line-height: 1.5625rem;
     color: white;
+    width: 110px;
+    height: 45px;
 }
 
 div.nav_bar{
@@ -254,7 +256,6 @@ section.hero button a{
     font-weight: 600;
     font-style: normal;
     text-decoration: none;
-    line-height: 1.25rem;
     color: white;
 }
 
@@ -318,7 +319,6 @@ div.exhibit_details button a{
     font-weight: 600;
     font-style: normal;
     text-decoration: none;
-    line-height: 1.25rem;
     color: white;
 }
 
@@ -413,7 +413,6 @@ section.purchase_tickets button a{
     font-weight: 600;
     font-style: normal;
     text-decoration: none;
-    line-height: 1.25rem;
     color: white;
 }
 
@@ -501,7 +500,6 @@ button.about_artist_button a{
     font-weight: 600;
     font-style: normal;
     text-decoration: none;
-    line-height: 1.25rem;
     color: white;
 }
 

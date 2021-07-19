@@ -1,3 +1,6 @@
+<?php  
+include('parse.php');
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -142,11 +145,11 @@
     <figure>
       <h1>Let Us Update You!</h1>
       <p>Daily tickets will be limited, so interested guests are encouraged to SIGN UP to receive updates detailing dates, venue, and ticket on-sale!</p>
-      <form class="emailform flex" name="emailform" id="emailform" method="get" action="index.html" novalidate>
+      <form class="emailform flex" name="emailform" id="emailform" method="get" action="<?php echo $_SERVER['PHP_SELF']; ?>">
         <label for="email"></label>
-        <input type="text" name="email" id="email" class="fsize" placeholder="YOUR EMAIL" />
-  
-  
+        <input type="email" name="email" id="email" class="fsize" placeholder="YOUR EMAIL" />
+
+        
         <input type="hidden" name="did_submit" value="true">
         <input type="submit" name="submit" value="SIGN ME UP" class="sign_me_up_button" />
         </form>
