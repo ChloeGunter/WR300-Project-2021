@@ -298,15 +298,29 @@ nav{
 
 section.hero{
     text-align: center;
-    padding: 10px 15px 30px;
+    padding: 30px 15px 30px;
+    background-color: rgba(0, 0, 0, .5);
+    position: relative;
+    overflow: hidden;
+    min-height: 50vh;
+}
+
+.video_hero{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 section.hero h1{
     font-size: 1.75rem;
-    padding: 30px 0 15px;
+    padding: 90px 0 15px;
 }
 
 section.hero p{
+    color: white;
     line-height: 1.125rem;
 }
 
@@ -317,7 +331,7 @@ section.hero :nth-child(2){
 
 section.hero .date{
     font-weight: bold;
-    padding: 10px 0 15px 0;
+    padding: 5px 0 25px 0;
     width: 63%;
     margin: 0 auto;
 }
@@ -337,6 +351,11 @@ section.hero button a{
 }
 
 /* About Exhibit */
+
+.dhome div.cf{
+    padding-top: 20px;
+    position: relative;
+}
 
 .dhome section.about_exhibit .wrap{
     float: right;
