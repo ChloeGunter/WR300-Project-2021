@@ -974,11 +974,17 @@ header{
 }
 header nav ul {
     background-color: white;
-    width: 80%;
 }
 #main_nav ul li a{
     color: #2c3c3f;
     border-radius: 5px;
+}
+#main_nav ul li a:hover{
+    color: #f55612;
+	text-decoration: none; 
+}
+#main_nav ul li:hover{
+    border: 1px solid white;
 }
 
 
