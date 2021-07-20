@@ -319,6 +319,10 @@ section.hero{
     min-height: 100%;
 }
 
+video[poster]{
+    object-fit: cover;
+}
+
 section.hero h1{
     font-size: 1.75rem;
     padding: 90px 0 15px;
