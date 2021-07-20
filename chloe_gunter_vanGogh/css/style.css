@@ -668,10 +668,18 @@ footer p{
     padding-bottom: 10px;
 }
 
+/* SVG Images */
+
+header svg{
+    align-items: center;
+    fill: white;
+}
+
 svg{
     padding-top: 5px;
 	width: 25px;
 	height: auto;
+    fill: white;
 }
 .social_icons {
 	fill: white;
@@ -679,6 +687,8 @@ svg{
 .social_icons:hover{
 	fill: #f55612;
 }
+
+
 
 /* Form */
 
