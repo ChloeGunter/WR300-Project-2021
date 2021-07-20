@@ -192,7 +192,7 @@ h1{
 
 button.ticket_button{
     background-color: #f55612;
-    text-align: center;
+    text-align: left;
     color: white;
     height: 45px;
     line-height: 2.8125rem;
@@ -670,9 +670,14 @@ footer p{
 
 /* SVG Images */
 
-header svg{
+button.ticket_button svg,
+button.about_artist_button svg{
     align-items: center;
     fill: white;
+    float: right;
+}
+button.about_artist_button svg{
+    padding-top: 0;
 }
 
 svg{
