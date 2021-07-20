@@ -309,7 +309,8 @@ section.hero{
     padding: 15px;
 }
 
-.dhome .video_hero{
+.dhome .video_hero
+{
     position: absolute;
     z-index: -1;
     top: 0;
@@ -913,7 +914,11 @@ main.locations_list p:nth-of-type(2n) {
 
 section.welcome{
     text-align: center;
-    padding: 10px 20px 30px;
+    padding: 70px 15px 30px;
+    background-color: rgba(0, 0, 0, .5);
+    position: relative;
+    overflow: hidden;
+    min-height: 50vh;
 }
 
 section.welcome h1{
@@ -922,6 +927,7 @@ section.welcome h1{
 }
 
 section.welcome p{
+    color: white;
     line-height: 1.125rem;
 }
 

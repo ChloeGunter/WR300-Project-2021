@@ -37,7 +37,10 @@ include('parse.php');
     <h1>Thank You For Joining!</h1>
     <p class="welcome">You will be receiving detailed updates on dates, venue, and ticket on-sale!</p>
     <p>Beyond Van Gogh: The Immersive Experience will be in San Diego at the Wyland Center at Del Mar Fairgrounds for a limited engagement. Don’t miss this stunning journey into the world of Vincent Van Gogh!</p>
-  </section>
+  <video class="video_hero" autoplay muted loop>
+      <source src="videos/vangogh.mp4" type="video/mp4">
+    </video>
+    </section>
 </main>
 
 <footer class="flex">
