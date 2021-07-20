@@ -763,8 +763,8 @@ div.copyright {
 .dabout section.hero .wrap {  
 	float: right;
     shape-outside: polygon(14.5% 31%, 38.5% 19px, 100% 16px, 101% 102%, 46% 100%, 34.21% 93.42%, 28% 69.6%, 14.5% 57%);
-	width: 200px;
-	height: 250px;
+    width: 65%;
+    height: 30%;
   }
   .dabout section.hero{
     background-image: url(../images/about_page_hero.jpg);
@@ -947,8 +947,8 @@ section.welcome p.welcome{
 @media screen and (min-width: 334px){
 
 .dabout section.hero .wrap {
-    width: 210px;
-    height: 260px;
+    width: 70%;
+    height: 30%;
 }
 
 .dgallery section.hero .wrap {
@@ -1118,6 +1118,22 @@ header nav ul {
 }
 #main_nav ul li:hover{
     border: 1px solid white;
+}
+
+.dhome section.hero h1{
+    font-size: 2.3125rem;
+    padding: 90px 0 15px;
+}
+
+.dhome section.hero p{
+    font-size: 1.25rem;
+    line-height: 2rem;
+}
+.dhome section.hero .date{
+    font-weight: bold;
+    padding: 5px 0 25px 0;
+    width: 63%;
+    margin: 0 auto;
 }
 
 
@@ -1293,7 +1309,7 @@ footer figure {
 
 .dabout section.hero .wrap {
     width: 80%;
-    min-height: 90%;
+    min-height: 100%;
 }
 .dabout div.hero_parent {
     position: relative;

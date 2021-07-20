@@ -15,9 +15,9 @@ include('parse.php');
 
 </head>
 <body class="dhome">
-  <header> 
+<header> 
         <a href="index.html" class="logo"><img src="images/logo_grey.png" alt="logo"></a>
-        <a href="#purchase_tickets" class="purchase_tickets"><button class="ticket_button">TICKETS<i class="fas fa-arrow-right"></i></button></a> 
+        <button class="ticket_button"><a href="#purchase_tickets" class="purchase_tickets">TICKETS<i class="fas fa-arrow-right"></i></a></button>
         <button class="hamburger hamburger--squeeze" title="open navigation" type="button">
           <span class="hamburger-box">
             <span class="hamburger-inner"></span>
@@ -44,7 +44,7 @@ include('parse.php');
 </main>
 
 <footer class="flex">
-  <a href="index.html"><img src="images/logo_white.png" alt="Beyond VanGogh Logo"></a>
+  <a href="index.html" class="logo" ><img src="images/logo_white.png" alt="Beyond VanGogh Logo"></a>
   <section class="flex">
     <figure>
       <h1>Contact Us</h1>
@@ -55,7 +55,7 @@ include('parse.php');
     <figure>
       <h1>Let Us Update You!</h1>
       <p>Daily tickets will be limited, so interested guests are encouraged to SIGN UP to receive updates detailing dates, venue, and ticket on-sale!</p>
-      <form class="emailform flex" name="emailform" id="emailform" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+      <form class="emailform flex" name="emailform" id="emailform" method="post" action="welcome.php" novalidate>
         <label for="email"></label>
         <input type="text" name="email" id="email" class="fsize" placeholder="YOUR EMAIL" />
   
