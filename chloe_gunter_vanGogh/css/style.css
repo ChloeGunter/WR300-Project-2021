@@ -659,17 +659,25 @@ footer figcaption a {
     text-decoration: none;
     color: white;
 }
-footer a {
-    line-height: 1.25rem;
-    color: white;
+footer a{
+    text-decoration: none;
 }
 footer p{
     font-weight: normal;
     color: white;
     padding-bottom: 10px;
 }
-footer a:hover {
-    color: #f55612;
+
+svg{
+    padding-top: 5px;
+	width: 25px;
+	height: auto;
+}
+.social_icons {
+	fill: white;
+}
+.social_icons:hover{
+	fill: #f55612;
 }
 
 /* Form */
