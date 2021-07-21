@@ -335,6 +335,7 @@ section.hero p{
 .dhome section.hero p{
     color: white;
 }
+
 section.hero :nth-child(2){
     width: 90%;
     margin: 0 auto;
@@ -419,7 +420,7 @@ div.exhibit_details :last-child p{
     padding-bottom: 0.5rem;
 }
 div.exhibit_details button{
-    width: 115px;
+    width: 130px;
     height: 45px;
 }
 div.exhibit_details button a{
@@ -631,7 +632,7 @@ button.about_artist_button a{
     font-style: normal;
     text-decoration: none;
     color: white;
-    padding: .6em .6em;
+    padding: .6em 0;
 }
 
 footer{
@@ -1454,8 +1455,7 @@ main.dgallery img {
 
 .dlocations section.hero .wrap {
     float: right;
-    shape-outside: polygon(13.61% 15.82%, 29.69% 21px, 100.5% 13px, 100% 100%, 49.69% 99.58%, 36.25% 99.46%, 13.93% 57.65%, 12% 31.37%);
-    width: 80%;
+    shape-outside: polygon(32.17% 15.61%, 42.4% 46px, 100.5% 13px, 100% 100%, 49.69% 99.58%, 35.75% 87.77%, 23.29% 56.64%, 23.37% 25.73%);    width: 80%;
     height: 140%;
 }
 .dlocations div.hero_parent {
@@ -1528,14 +1528,17 @@ form.emailform input[value="SIGN ME UP"] {
 
 @media screen and (min-width: 960px){
 
+
+/* Grid Stylings */
+
 body{
     display: grid;
     grid-template-areas:"sidebar content" "footer footer" "copy copy";
     grid-template-columns: 20% 80% 80%;
     grid-template-rows: auto auto 2em;
-  }
+}
     
-  header{
+header{
     grid-area: sidebar;
     position: fixed;
     display: flex;
@@ -1543,23 +1546,10 @@ body{
     background-color: lightgray;
     height: 100vh;
     width: 20%;
-  }
-    
-  ul.global.flex{
-    flex-direction: column;;
-  }
-    
-  #main_nav ul li{
-    text-align: left;
-    border: transparent;
-  }
-  #main_nav ul li a{
-    padding: .8em 10em .8em .6em;
-  }
-    
-  main{
+}
+main{
     grid-area: content;
-  }  
+}  
 footer{
     margin-left: 20%;
     grid-area: footer;
@@ -1572,10 +1562,201 @@ footer a.logo{
     grid-area: copy;
 }
 
+
+
+
+
+    
+ul.global.flex{
+    flex-direction: column;;
+}
+header a.purchase_tickets {
+    padding: .8em 33% .8em .5em;
+}
+a.purchase_tickets {
+    font-size: 1.25rem;
+}
 header nav ul {
     background-color: transparent;
+}  
+header nav ul li {
+    height: 60px;
+    line-height: 3.75rem;
+}
+#main_nav ul li{
+    text-align: left;
+    border: transparent;
+}
+#main_nav ul li a{
+    font-size: 1.675rem;
+    line-height: 3.75rem;
+    padding: .8em 10em .8em .6em;
+}
+button.ticket_button{
+    height: 55px;
+}
+section.hero button {
+    width: 170px;
+    height: 55px;
+}
+section.hero button a{
+padding: .6em 2em .6em .4em;
+}
+.dhome section.hero {
+    padding: 10px 30% 30px 30px;
+    text-align: left;
+}
+.dhome section.hero h1 {
+    padding: 30px 0 30px;
+    font-size: 4rem;
+    width: 420px;
+    line-height: 1.15em;
+}
+.dhome section.hero p {
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+}
+section.hero :nth-child(2),
+.dhome section.hero .date {
+    width: 100%;
+}
+.dhome section.hero .date {
+    padding: 20px 0 40px 0;
 }
 
+
+section.about_exhibit h1 {
+    font-size: 3.675rem;
+}
+section.about_exhibit p {
+    font-size: 1.5rem;
+}
+
+/* Exhibit Details */
+
+div.exhibit_details section h1 {
+    font-size: 3.675rem;
+    padding: 0 0 23px;
+}
+div.exhibit_details :last-child h3 {
+    line-height: 2rem;
+    font-size: 1.65rem;
+}
+div.exhibit_details :last-child p {
+    line-height: 1.65rem;
+    padding-bottom: 1.275rem;
+    font-size: 1.5rem;
+}
+div.exhibit_details button{
+    width: 140px;
+    height: 55px;
+    line-height: 2.8125rem;
+    margin: 0 auto;
+}
+div.exhibit_details button a {
+    padding: .6em 2em .6em .4em;
+}
+.exhibit_details img {
+    border-bottom: 10px solid white;
+}
+
+
+/* Purchase Tickets */
+
+section.purchase_tickets h1 {
+    font-size: 4.125rem;
+    padding: 40px 0 0;
+}
+section.purchase_tickets figure.pricing{
+    padding: 50px 30px;
+}
+ul.pricing_table li {
+    padding: 50px 0;
+}
+ul.pricing_table li:first-child{
+    padding: unset;
+}
+ul.pricing_table li:last-of-type{
+    padding: 0 0 5px;
+}
+ul.pricing_table span {
+    font-size: 1.785rem;
+}
+section.purchase_tickets p{
+    font-size: 1.125rem;
+}
+section.purchase_tickets button {
+    margin-top: 30px;
+}
+
+
+
+/* Hero Stylings */
+
+.dabout section.hero h1, 
+.dgallery section.hero h1, 
+.dlocations section.hero h1 {
+    font-size: 3.675rem;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.dabout section.hero p, 
+.dgallery section.hero p, 
+.dlocations section.hero p {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+}
+
+/* About Page */
+
+body.dabout main section.right_align h1, 
+body.dabout main section.left_align h1 {
+    font-size: 3rem;
+    line-height: 3.25rem;
+    padding-bottom: 30px;
+}
+body.dabout main section.right_align p, 
+body.dabout main section.left_align p {
+    font-size: 1.35rem;
+}
+
+/* Gallery Page */
+
+
+
+
+/* Locations Page */
+
+main.locations_list {
+    padding: 5px 30px 40px;
+}
+main.dlocations section.left-align h1, 
+main.dlocations section.left-align button, 
+main.dlocations section.right-align h1, 
+main.dlocations section.right-align button {
+    font-size: 3rem;
+}
+main.dlocations section.left-align h3, 
+main.dlocations section.right-align h3 {
+    font-size: 1.875em;
+    line-height: 2.25rem;
+    padding-top: 20px;
+}
+main.dlocations section.left-align h4, 
+main.dlocations section.right-align h4, 
+main.dlocations section.left-align p, 
+main.dlocations section.right-align p {
+    font-size: 1.65rem;
+    line-height: 2.25rem;
+}
+main.dlocations section.left-align h4, 
+main.dlocations section.right-align h4, 
+main.dlocations section.left-align p, 
+main.dlocations section.right-align p {
+    font-size: 1.75rem;
+    line-height: 2.35rem;
+}
 
 
 
