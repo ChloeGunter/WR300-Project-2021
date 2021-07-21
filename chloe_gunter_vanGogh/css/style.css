@@ -964,6 +964,40 @@ section.welcome p.welcome{
     margin: 0 auto;
 }
 
+/* 404 Page */
+
+div.error{
+    text-align: center;
+    padding: 20px;
+}
+div.error h1{
+    font-size: 2rem;
+    padding: 30px 0 10px;
+}
+
+div.error p{
+    line-height: 1.125rem;
+}
+
+div.error p.error{
+    font-weight: bold;
+    padding: 5px 0 20px;
+    margin: 0 auto;
+}
+
+div.error button{
+    width: 125px;
+    height: 45px;
+    line-height: 2.8125rem;
+    margin: 0 auto;
+}
+div.error button a{
+    font-family: 'novel-mono-pro', 'sans-serif';
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: none;
+    color: white;
+}
 
 
 
