@@ -729,8 +729,7 @@ form.emailform input[value="SIGN ME UP"] {
 div.copyright {
     text-align: center;
     font-size: smaller;
-    font-weight: bold;
-    line-height: 1rem;
+    line-height: 2rem;
     background-color: grey;
     color: white;
 }
@@ -1419,7 +1418,7 @@ body.dabout main section.left_align{
 
 /* Gallery Page */
 
-body.dgallery img {
+main.dgallery img {
     border: 3px solid #fff;
 }
 
@@ -1526,7 +1525,7 @@ form.emailform input[value="SIGN ME UP"] {
 body{
     display: grid;
     grid-template-areas:"sidebar content" "footer footer" "copy copy";
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 20% 80% 80%;
     grid-template-rows: auto auto 2em;
   }
     
@@ -1560,7 +1559,8 @@ footer a.logo{
     display: none;
 }
 .copyright{
-  grid-area: copy;
+    margin-left: 20%;
+    grid-area: copy;
 }
 
 header nav ul {
