@@ -663,6 +663,9 @@ footer figcaption a {
     text-decoration: none;
     color: white;
 }
+footer figcaption a:hover{
+    color: #f55612;
+}
 footer a{
     text-decoration: none;
 }
