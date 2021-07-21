@@ -1,1 +1,4 @@
-ErrorDocument 404 http://chloegunter.com/public_html/vanGogh/chloe_gunter_vanGogh/404.public_html
+
+ErrorDocument 404 /404.html
+
+ErrorDocument 404 https://chloegunter.com/vanGogh/chloe_gunter_vanGogh/404.html
