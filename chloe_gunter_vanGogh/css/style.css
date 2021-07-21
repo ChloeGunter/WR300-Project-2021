@@ -176,7 +176,7 @@ div.top_nav h2 a{
     font-weight: 700;
     font-style: normal;
     text-decoration: none;
-    line-height: 1.5625rem;
+    line-height: 2.8125rem;
     color: white;
 }
    
@@ -249,6 +249,7 @@ nav{
     font-weight: 400;
     font-style: normal;
     line-height: 2.125rem;
+    padding: 1em 2em;
     text-decoration: none;
 	color: white;
 }
@@ -358,6 +359,7 @@ section.hero button a{
     font-style: normal;
     text-decoration: none;
     color: white;
+    padding: .6em .3em;
 }
 
 /* About Exhibit */
@@ -629,6 +631,7 @@ button.about_artist_button a{
     font-style: normal;
     text-decoration: none;
     color: white;
+    padding: .6em .6em;
 }
 
 footer{
@@ -1548,7 +1551,10 @@ body{
     
   #main_nav ul li{
     text-align: left;
-    padding-left: 1em;
+    border: transparent;
+  }
+  #main_nav ul li a{
+    padding: .8em 10em .8em .6em;
   }
     
   main{
@@ -1568,9 +1574,6 @@ footer a.logo{
 
 header nav ul {
     background-color: transparent;
-}
-#main_nav ul li{
-    border: transparent;
 }
 
 
