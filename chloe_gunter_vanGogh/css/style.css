@@ -323,6 +323,30 @@ video[poster]{
     object-fit: cover;
 }
 
+*::-webkit-media-controls-panel {
+
+    display: none!important;
+  
+    -webkit-appearance: none;
+  
+  }
+  
+  *::-webkit-media-controls-play-button {
+  
+    display: none!important;
+  
+    -webkit-appearance: none;
+  
+  }
+  
+  *::-webkit-media-controls-start-playback-button {
+  
+    display: none!important;
+  
+    -webkit-appearance: none;
+  
+  }
+
 section.hero h1{
     font-size: 1.75rem;
     padding: 90px 0 15px;
