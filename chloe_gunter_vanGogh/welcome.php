@@ -1,8 +1,8 @@
 <?php  
 include('parse.php');
 ?>
-<!DOCTYPE html class="no-js">
-<html lang="en" dir="ltr">
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
