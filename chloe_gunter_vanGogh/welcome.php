@@ -2,7 +2,7 @@
 include('parse.php');
 ?>
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class="no-js">
+<html lang="en-US" dir="ltr" class="no-js">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
