@@ -198,6 +198,7 @@ button.ticket_button{
     line-height: 2.8125rem;
     width: 100%;
     font-size: 1rem;
+    font-weight: 600;
 }
 img{
     width: 100%
@@ -244,6 +245,11 @@ nav{
 #main_nav ul li:hover{
     border: 3px solid #f55612;
 }
+.dabout #main_nav ul li:nth-child(1) a,
+.dgallery #main_nav ul li:nth-child(2) a,
+.dlocations #main_nav ul li:nth-child(3) a{
+    color: #f55612;
+}
 
 
 
@@ -281,17 +287,14 @@ nav{
 
 /* Hero */
 
-.dhome section.hero{
+.dhome section.hero,
+.dhome section.welcome{
     text-align: center;
     padding: 30px 15px 30px;
     background-color: rgba(0, 0, 0, .5);
     position: relative;
     overflow: hidden;
     min-height: 50vh;
-}
-
-section.hero{
-    padding: 15px;
 }
 
 .dhome .video_hero
@@ -308,15 +311,19 @@ video[poster]{
     object-fit: cover;
 }
 
-section.hero h1{
+section.hero h1,
+section.welcome h1{
     font-size: 1.75rem;
     padding: 90px 0 15px;
 }
 
-section.hero p{
+section.hero p,
+section.welcome p{
     line-height: 1.125rem;
+    padding-left: 5px;
 }
-.dhome section.hero p{
+.dhome section.hero p,
+.dhome section.welcome p{
     color: white;
 }
 
@@ -664,6 +671,10 @@ footer p{
     color: white;
     padding-bottom: 10px;
 }
+input[type=text], input[type=submit] {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
 
 /* SVG Images */
 
@@ -697,7 +708,7 @@ svg{
 form.emailform input[placeholder="YOUR EMAIL"]{
     color: #000000;
     font-family: 'bely', 'serif';
-    height: 22px;
+    min-height: 45px;
     border: none;
     width: 120px;
     padding-left: 8px;
@@ -711,9 +722,10 @@ form.emailform input[value="SIGN ME UP"] {
     font-family: 'bely', 'serif';
     font-weight: 700;
     font-style: normal;
-    width: 110px;
+    width: 120px;
     font-size: 1rem;
     cursor: pointer;
+    height: 45px;
 }
 
 
@@ -730,27 +742,37 @@ div.copyright {
 
 /* About Page */
 
-  .dgallery section.hero{
+.dgallery section.hero{
+    margin-bottom: 2rem;
+}
+
+.dgallery .wrap {
+    shape-outside: polygon(14.5% 31%, 24.05% 13px, 100% 16px, 101% 102%, 46% 100%, 34.21% 93.42%, 28% 69.6%, 14.5% 57%);
     background-image: url(../images/gallery_page_hero.jpg);
-  }
-  .dgallery .wrap {  
-	float: right;
-    shape-outside: polygon(17.86% 23.85%, 46% 0px, 100% 0px, 99.5% 94.8%, 63% 94.4%, 33.90% 80.97%, 30.9% 66.65%, 18.76% 49.87%);
-	width: 200px;
-	height: 250px;
-  }
+    width: 80%;
+    height: 0;
+    padding-bottom: 63.47%;
+    float: right;
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top right;
+}
 
 .dgallery section.hero p{
     padding-bottom: 20px;
 }
-.dlocations section.hero{
-    background-image: url(../images/locations_page_hero.jpg);
-}
-.dlocations .wrap {  
+.dlocations section.hero .wrap {
     float: right;
-    shape-outside: polygon(26.51% 25.05%, 29.69% 21px, 100.5% 13px, 100% 100%, 49.69% 99.58%, 36.25% 99.46%, 13.93% 57.65%, 12% 31.37%);
+    background-image: url(../images/locations_page_hero.jpg);
     width: 70%;
-    height: 38%;
+    height: 0;
+    padding-bottom: 63.47%;
+    float: right;
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-size: contain;
+    shape-outside: polygon(30.38% 7.24%, 52.67% 12px, 100.5% 13px, 100% 100%, 49.69% 99.58%, 20.13% 62.17%, 1.86% 45.31%, 1.05% 9.98%);
 }
 
   
@@ -760,6 +782,7 @@ div.copyright {
 .dlocations section.hero h1 {
     padding-top: 0;
     padding-bottom: 20px;
+    padding-left: 5px;
 }
 .dabout section.hero :nth-child(2),
 .dgallery section.hero :nth-child(2),
@@ -810,10 +833,10 @@ div.copyright {
 }
 .dabout .rightwrap {
     background-image: url(../images/about_page_right_align.jpg);
-    shape-outside: polygon(49.53% 10.27%, 35% 0px, 0px 0px, 1px 44.94%, 32.69% 44.75%, 50.91% 42.58%, 59.13% 37.54%, 59.11% 22.61%);    
-    width: 70%;
+    shape-outside: polygon(65.6% 10.27%, 35% 0px, 0px 0px, 6px 100.29%, 76.51% 96.71%, 100.52% 80.21%, 98.17% 51.76%, 85.38% 30.07%);
+    width: 50%;
     height: 0;
-    padding-bottom: 100%;
+    padding-bottom: 53.56%;
     float: left;
     opacity: 1;
     background-repeat: no-repeat;
@@ -846,15 +869,16 @@ div.wheatfield{
 .dabout .leftwrap {
     background-image: url(../images/about_page_left_align.jpg);
     float: right;
-    shape-outside: polygon(59.68% 15.5%, 69.4% 26px, 99.2% 23px, 99.28% 88.57%, 65.42% 88.61%, 49.04% 81.56%, 45.75% 48.71%, 46.98% 27.91%);
-    width: 100%;
+    shape-outside: polygon(37.17% 15.98%, 52.68% 6px, 99.2% 23px, 99.28% 88.57%, 37.77% 99.09%, 7.88% 81.56%, 0.73% 38.7%, 10.32% 24.1%);
+    width: 50%;
     height: 0;
-    padding-bottom: 80%;
+    padding-bottom: 67.49%;
     opacity: 1;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top right;
 }
+
 
 body.dabout main section.right_align{
     text-align: right;
@@ -896,6 +920,7 @@ section.collapsing_gallery{
 }
 section.collapsing_gallery div.flex {
     flex-wrap: wrap;
+    width: 50%;
 }
 section.collapsing_gallery div.flex img{
     width: 50%;
@@ -917,6 +942,8 @@ section.collapsing_gallery2 div.flex {
 
 
   /* Locations Page */
+
+
 main.locations_list{
       padding: 5px 5px 25px;
   }
@@ -965,6 +992,9 @@ main.locations_list p:nth-of-type(2n) {
 }
 .dlocations div.exhibit_details {
     flex-direction: column;
+}
+.dlocations section.hero {
+    padding-bottom: 9em;
 }
 
 
@@ -1039,110 +1069,18 @@ div.error button a{
 }
 
 
-
-
-
-
-
-@media screen and (min-width: 334px){
-
-
-.dgallery section.hero .wrap {
-    width: 70%;
-    height: 38%;
-}
-
-
-}
-@media screen and (min-width: 360px){
-
-
-.dgallery section.hero .wrap {
-    width: 75%;
-    height: 45%;
-}
-
-.dlocations .wrap {
-    width: 70%;
-    height: 45%;
-}
-    
-}
 @media screen and (min-width: 405px){
 
 #main_nav ul.global{
     flex-direction: row;
 }
-
-
-.dgallery section.hero .wrap {
-    width: 80%;
-    height: 48%;
+.congregation {
+    margin: 4rem 0 5rem;
 }
-    
-}
-@media screen and (min-width: 430px){
-
-div.top_nav a[href="index.html"] {
-    width: 35%;
-}
-
-.dlocations section.hero {
-    padding-bottom: 9em;
-}
-
 
     
 }
 
-
-@media screen and (min-width: 530px){
-    /* .dabout section.hero, .dgallery section.hero {
-        background-size: 110%;
-        min-height: 60%;
-        padding-bottom: 4em;
-    } */
-    .dlocations section.hero {
-        background-size: 110%;
-        min-height: 60%;
-        padding-bottom: 9em;
-    }
-    /* div.wheatfield_parent{
-        position: relative;
-        padding-bottom: 64.674%;
-        height: 0;
-        margin-bottom: 1em;
-    }
-    div.wheatfield{
-        background-image: url(../images/about_page_right_align.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        padding-top: 30px;
-    } */
-    /* div.congregation_parent{
-        position: relative;
-        padding-bottom: 73.417%;
-        height: 0;
-        margin-bottom: 1em;
-    }
-    div.congregation{
-        background-image: url(../images/about_page_left_align.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        padding-top: 30px;
-    } */
-
-}
 
 
 @media screen and (min-width: 620px){
@@ -1151,11 +1089,6 @@ div.top_nav a[href="index.html"] {
 button.hamburger{
     display: none;
 }
-
-/* div.top_nav a[href="index.html"] {
-    width: 25%;
-} */
-
 header{
     grid-template-areas: "logo nav tickets";
     grid-template-columns: 20% 60% 20% ;
@@ -1183,11 +1116,15 @@ header nav ul {
     border: 1px solid white;
 }
 
-.dhome section.hero h1{
+.dhome section.hero h1,
+.dhome section.welcome h1{
     font-size: 2.3125rem;
     padding: 90px 0 15px;
 }
-
+section.welcome p{
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+}
 .dhome section.hero p{
     font-size: 1.25rem;
     line-height: 2rem;
@@ -1216,7 +1153,7 @@ section.about_exhibit p {
 
 div.exhibit_details{
     flex-direction: row;
-    padding: 50px 10px 10px;
+    padding: 0 10px 10px;
 }
 div.exhibit_details figure,
 div.exhibit_details section{
@@ -1416,33 +1353,22 @@ body.dabout main section.right_align,
 body.dabout main section.left_align{
     background-image: none;
 }
+.dabout section.hero {
+    margin-bottom: 7rem;
+}
+.congregation {
+    margin: 16rem 0 14rem;
+}
 
 
 /* Gallery Page */
 
-main.dgallery img {
-    border: 3px solid #fff;
+.dgallery section.hero {
+    margin-bottom: 10rem;
 }
 
-.dgallery section.hero .wrap {
-    width: 85%;
-    min-height: 100%;
-}
-.dgallery div.hero_parent {
-    position: relative;
-    padding-bottom: 71.4011%;
-    height: 0;
-    margin-bottom: 1em;
-}
-.dgallery section.hero{
-    background-image: url(../images/gallery_page_hero.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+main.dgallery img {
+    border: 3px solid #fff;
 }
 
 /* FancyBox */
@@ -1530,7 +1456,14 @@ main.dgallery img {
 
 /* Locations Page */
 
+.dlocations section.hero {
+    padding-bottom: 13em;
+}
 .dlocations section.hero .wrap {
+    shape-outside: polygon(10.40% 13.73%, 52.67% 12px, 100.5% 13px, 100% 100%, 49.69% 99.58%, 20.13% 62.17%, 6.69% 52.18%, 5.35% 31.66%);
+}
+
+/* .dlocations section.hero .wrap {
     float: right;
     shape-outside: polygon(32.17% 15.61%, 42.4% 46px, 100.5% 13px, 100% 100%, 49.69% 99.58%, 35.75% 87.77%, 23.29% 56.64%, 23.37% 25.73%);    width: 80%;
     height: 140%;
@@ -1550,6 +1483,10 @@ main.dgallery img {
     left: 0;
     width: 100%;
     height: 100%;
+} */
+
+main.locations_list {
+    padding: 40px 5px 40px;
 }
 
 main.locations_list p:nth-of-type(2n) {
@@ -1681,17 +1618,20 @@ section.hero button {
 section.hero button a{
 padding: .6em 2em .6em .4em;
 }
-.dhome section.hero {
+.dhome section.hero,
+.dhome section.welcome {
     padding: 10px 30% 30px 30px;
     text-align: left;
 }
-.dhome section.hero h1 {
+.dhome section.hero h1,
+.dhome section.welcome h1 {
     padding: 30px 0 30px;
     font-size: 4rem;
     width: 420px;
     line-height: 1.15em;
 }
-.dhome section.hero p {
+.dhome section.hero p,
+.dhome section.welcome p {
     font-size: 1.5rem;
     line-height: 1.875rem;
 }
@@ -1775,7 +1715,7 @@ section.purchase_tickets button {
 .dabout section.hero h1, 
 .dgallery section.hero h1, 
 .dlocations section.hero h1 {
-    font-size: 3.675rem;
+    font-size: 3.3rem;
     padding-top: 30px;
     padding-bottom: 40px;
 }
@@ -1858,6 +1798,35 @@ main.dlocations section.right-align p {
 
 }
 
+
+@media screen and (min-width: 1340px){
+
+
+
+/* About Page */
+
+.dabout section.hero {
+    margin: 0 0 15rem;
+}
+
+.congregation {
+    margin: 25rem 0 25rem;
+}
+
+/* Gallery Page */
+
+.dgallery section.hero {
+    margin-bottom: 20rem;
+}
+
+.dlocations section.hero {
+    padding-bottom: 23em;
+}
+
+
+
+
+}
 
 
 
