@@ -920,7 +920,7 @@ section.collapsing_gallery{
 }
 section.collapsing_gallery div.flex {
     flex-wrap: wrap;
-    width: 50%;
+    width: 100%;
 }
 section.collapsing_gallery div.flex img{
     width: 50%;
@@ -1816,7 +1816,7 @@ main.dlocations section.right-align p {
 /* Gallery Page */
 
 .dgallery section.hero {
-    margin-bottom: 20rem;
+    margin-bottom: 35rem;
 }
 
 .dlocations section.hero {
